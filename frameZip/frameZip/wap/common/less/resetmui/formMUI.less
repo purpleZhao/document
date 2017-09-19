@@ -1,0 +1,212 @@
+/**
+     * 重置MUI的表单样式
+     * @author yangjinlai 2017-02-14
+ */
+
+@import url("../reset.less");
+@import url("../color.less");
+
+//引入重置mui样式文件
+@import url("./resetMUI.less");
+//引入重置mui下拉列表样式文件
+@import url("./selectMUI.less");
+
+
+.form-wrap{
+    
+    .form-list{
+        //background: @c005;
+        font-size: 1.4rem;
+    }
+
+
+    .mui-input-row{
+        border-bottom: 0.1rem solid @c004;
+        color: @c001;
+        box-sizing: content-box;
+        height:4rem;
+        &:last-child{
+            border-bottom: 0;
+        }
+
+        .inputDiv{
+            position: relative;
+        }
+        
+        //图文验证码
+        img{
+            width: 7.3rem;
+            height: 2.6rem;
+            margin: 0.8rem 1.2rem 0 0;
+        }
+        
+        //短信验证码
+        .time{
+            margin-right: 1.2rem;
+            font-size: 1.4rem;
+            color: #f4cf5c;
+            line-height: 4rem;
+        }
+
+        //可见或不可见
+        .noEye, .help{
+            float:right;
+            margin-right:1.2rem;
+            font-size: 2.1rem;
+            line-height: 4rem;
+        }
+        .mui-col-xs-1{
+            width:2.1rem;
+        }
+        .mui-col-xs-11{
+            position: absolute;
+            right:3.3rem;
+            left:0;
+            width:auto;
+        }
+        .mui-col-xs-10{
+            position:absolute;
+            left:2.1rem;
+            right:3.3rem;
+            width:auto;
+        }
+        .mui-col-xs-8{
+            position:absolute;
+            left:2.1rem;
+            right:8.7rem;
+            width:auto;
+        }
+        .mui-col-xs-9{
+            position:absolute;
+            left:0;
+            right:8.7rem;
+            width:auto;
+        }
+        .mui-col-xs-3{
+           float:right;
+        }
+    }
+
+    //有小问号的情况
+    .row-two{
+        border-bottom: 0.1rem solid #e5e5e5;
+        position:relative;
+
+        .mui-input-row{
+            margin-right: 3rem;
+            border-bottom: 0;
+        }
+
+        .help{
+            position: absolute;
+            right: 1.2rem;
+            top: 1.4rem;
+        }
+    }
+        
+    /*ul列表*/
+    .mui-table-view{
+        color: @c001;
+        
+        .mui-table-view-cell{
+            padding: 0;
+            width: 100%;
+
+            &:after{
+                height: 1px;
+            }
+        }
+
+        &:last-child{
+            li:after{
+                height: 0;
+            }
+        }
+    }
+
+    //起投金额的输入框
+    &.investInput{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0rem 1rem 0 rgba(0, 0, 0, 0.2);
+
+        input{
+            text-indent: 1.6rem;
+        }
+        button{
+            font-size: 1.4rem;
+            border-radius: 0;
+        }
+    }
+}
+//重置下拉列表的点击颜色
+// .mui-table-view-cell>a:not(.mui-btn).mui-active{
+//     background: rgba(0,0,0,0);
+// }
+
+
+//语音验证码
+.noCode{
+    display:none;
+    float: right;
+    margin: 0.8rem 1.2rem 0 0;
+    font-size: 1.2rem;
+    color: @c003;
+}
+
+
+
+.module{
+    margin-top: @c005;
+    background: #fff;
+    box-shadow: 0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+}
+/*
+    每一行表单元素，是一个card-input-row
+ */
+.card-input-row{
+    margin-left: 1.6rem;
+    min-height: 4rem;
+    //line-height: 4rem;
+    font-size: 1.4rem;
+    color: #bbb;
+    border-bottom: 1px solid #e5e5e5;
+    
+    &:last-child{
+        border-bottom: 0;
+    }
+
+    .iconfont{
+        line-height: 4rem;
+    }
+    .twyzm_img{
+        float: right;
+        display: block;
+        width: 7.3rem;
+        height: 2.6rem;
+        margin: 0.7rem 1.2rem 0 0;
+        margin-right: 1.2rem;
+        outline: none;
+    }
+    
+}
+
+
+.button {
+    display: block;
+    width: 90%;
+    height: 4rem;
+    margin: 5rem auto 0;
+    color: @c005;
+    font-size: 1.6rem;
+    border-radius: 0.2rem;
+    background: @c006;
+    -webkit-appearance: none;
+}
+
+.disable{
+    //background: rgba(204,204,204, 0.6);
+    background: rgb(204,204,204);
+}

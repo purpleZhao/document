@@ -1,0 +1,58 @@
+
+/*方式一*/
+.type_1{
+	font-size: 0;  /*可去除display:inline-block;两个元素之间的空白距离*/
+	color: #7d7c7d;
+}
+.type_1 .checkBox{
+	cursor: pointer;
+    vertical-align: middle;
+}
+
+.type_1 .checkBox.select{
+	color: #f4cf5c;
+}
+
+.type_1 .txt{
+	cursor: pointer;
+	font-size: 14px;
+    line-height: 14px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+/*方式二*/
+.type_2{
+	font-size: 0;
+	color: #7d7c7d;
+}
+.type_2 .checkBox{
+	position: relative;
+	cursor: pointer;
+	font-size: 0;
+	font-style: normal;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	display: inline-block;
+
+}
+.type_2 .checkBox:before{
+	content: '\e648';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    font-family: 'iconfont';
+}
+.type_2 .checkBox.select:before{
+	content: '\e647';
+	color: #f4cf5c;
+}
+.type_2 .txt{
+	cursor: pointer;
+	font-size: 14px;
+	vertical-align: middle;
+	line-height: 14px;
+	margin-left: 6px;
+}

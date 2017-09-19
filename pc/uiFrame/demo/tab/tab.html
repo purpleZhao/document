@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>tab标签</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/tab/tab.css">
+
+		<style>
+
+			body{
+				min-width: 600px;
+			}
+
+			h5{
+				margin-bottom: 30px;
+			}
+
+			.tabTypeOne, .tabTypeTwo{
+				width: 100%;
+			}
+
+			.tabBody{
+				height: 100px; 
+				margin-bottom: 40px;
+			}
+
+			.tabContent{
+				text-align: center;padding-top: 20px;
+			}
+
+			
+		</style>
+
+	</head>
+
+	<body> 
+
+		<h5>第一种tab标签</h5>
+
+		<div class="tabType tabTypeOne">
+			<!-- tab标签 -->
+	        <div class="tabHeader">
+	            <span class="tab active" num="0">买入</span>
+	            <span class="tab" num="1">赎回</span>
+	        </div>  
+	        <!-- 内容区域 -->
+	        <div class="tabBody">
+		        <div class="tabContent" num="0">
+		        	这是买入区域
+		        </div>
+		        <div class="tabContent" num="1">
+		       		这是赎回区域
+		        </div>
+		    </div>
+	    </div>
+
+	    <h5>第二种tab标签</h5>
+
+	    <div class="tabType tabTypeTwo">
+			<!-- tab标签 -->
+	        <div class="tabHeader">
+	            <span class="tab active" num="0">买入</span>
+	            <span class="tab" num="1">赎回</span>
+	        </div>  
+	        <!-- 内容区域 -->
+	        <div class="tabBody">
+		        <div class="tabContent" num="0">
+		        	这是买入区域
+		        </div>
+		        <div class="tabContent" num="1">
+		       		这是赎回区域
+		        </div>
+		    </div>
+	    </div>
+
+
+	    <h5>第三种tab标签</h5>
+
+	    <div class="tabType tabTypeThree">
+			<!-- tab标签 -->
+	        <div class="tabHeader">
+	            <span class="tab active" num="0">买入</span>
+	            <span class="tab" num="1">赎回</span>
+	        </div>  
+	        <!-- 内容区域 -->
+	        <div class="tabBody">
+		        <div class="tabContent" num="0">
+		        	这是买入区域
+		        </div>
+		        <div class="tabContent" num="1">
+		       		这是赎回区域
+		        </div>
+		    </div>
+	    </div>
+		
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/tab/tab.js"></script>
+
+	</body>
+
+</html>

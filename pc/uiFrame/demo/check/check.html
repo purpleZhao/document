@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>复选框</title>
+
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/check/check.css">
+
+	</head>
+
+	<body> 
+
+
+		<h3>方式一</h3>
+		<div class="type_1">
+			<i class="iconfont checkBox">&#xe648;</i>  
+			<span class="txt">点击这里查看效果</span>
+		</div>
+
+		<h3>方式二</h3>
+		<div class="type_2">
+			<i class="checkBox"></i>  
+			<span class="txt">点击这里查看效果</span>
+		</div>
+
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+
+		<script>
+
+			$('.type_1').on('click', function(){
+				var $box = $(this).find('.checkBox');
+				if( $box.hasClass('select') ){
+					$box.html('&#xe648;').removeClass('select');
+				}else{
+					$box.html('&#xe647;').addClass('select');
+				}
+			})
+
+			$('.type_2').on('click', function(){
+				var $box = $(this).find('.checkBox');
+				if( $box.hasClass('select') ){
+					$box.removeClass('select');
+				}else{
+					$box.addClass('select');
+				}
+			})
+
+
+			
+		</script>
+		
+	</body>
+
+</html>

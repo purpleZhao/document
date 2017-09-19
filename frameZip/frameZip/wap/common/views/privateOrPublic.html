@@ -1,0 +1,21 @@
+<!-- 公募或私募按钮 -->
+<div class="publicOrPrivate">
+	<div class="mui-segmented-control">
+
+		<a class="publicOrPrivateBtn gmBtn mui-active" href="javascript:;">公募</a>
+
+		<a class="publicOrPrivateBtn smBtn" href="javascript:;">私募</a>
+	</div>
+  <div class="mui-icon searchicon mui-icon-search"></div>
+</div>
+
+<script>
+
+	if(window.location.href.indexOf("productPrivate") != -1){
+				document.getElementsByClassName("smBtn")[0].className="publicOrPrivateBtn smBtn mui-active";
+				document.getElementsByClassName("gmBtn")[0].className= "publicOrPrivateBtn gmBtn";
+			}else{
+				document.getElementsByClassName("gmBtn")[0].className="publicOrPrivateBtn gmBtn mui-active";
+				document.getElementsByClassName("smBtn")[0].className="publicOrPrivateBtn smBtn";
+			}
+</script>

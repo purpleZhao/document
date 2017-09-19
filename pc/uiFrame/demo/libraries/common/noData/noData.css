@@ -1,0 +1,24 @@
+/**
+ * 没有数据时的显示
+ */
+.loading_NoData {
+  display: none;
+  width: 100%;
+  /* height: 100%; */
+  position: relative;
+  padding-top: 90px;
+  text-align: center;
+}
+.loading_NoData .noDataCon {
+  text-align: center;
+  color: #7d7c7d;
+}
+.loading_NoData .noDataCon .iconfont {
+  font-size: 60px;
+  margin-bottom: 40px;
+  display: block;
+}
+.loading_NoData .noDataCon p {
+  font-size: 14px;
+  padding-bottom: 60px;
+}

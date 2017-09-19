@@ -1,0 +1,82 @@
+/*ul列表*/
+.mui-table-view:after,
+.mui-table-view:before {
+  height: 0;
+}
+.mui-table-view:last-child {
+  border-bottom: 0;
+}
+.mui-table-view .mui-table-view-cell {
+  padding: 0;
+}
+.mui-table-view .mui-table-view-cell:after {
+  left: 0;
+  background-color: #e5e5e5;
+  height: 1px;
+  -webkit-transform: inherit;
+  transform: inherit;
+}
+.mui-table-view .mui-table-view-cell:last-child:after {
+  height: 0;
+}
+.mui-table-view .mui-table-view-cell.mui-active {
+  margin-top: 0;
+  background-color: #fff;
+}
+.mui-table-view .mui-table-view-cell > a:not(.mui-btn).mui-active {
+  background: rgba(0, 0, 0, 0);
+}
+.mui-table-view .mui-table-view-cell a:not(.mui-btn) {
+  margin: 0;
+  padding: 0;
+  line-height: 4rem;
+}
+.mui-table-view .mui-table-view-cell a:not(.mui-btn).paddingRight {
+  padding-right: 3.4rem;
+}
+.mui-table-view .mui-table-view-cell a:not(.mui-btn):after {
+  color: #bbb;
+  right: 1.2rem;
+  line-height: 4rem;
+}
+.mui-table-view .mui-table-view-cell .hasSelect {
+  color: #333;
+}
+.mui-table-view .mui-table-view-cell .word {
+  position: absolute;
+  right: 1.2rem;
+  top: 0;
+  line-height: 4rem;
+}
+.mui-table-view .mui-table-view-cell .word.hasRight {
+  right: 3rem;
+}
+.mui-navigate-right:after {
+  content: '\e600';
+  font-family: iconfont;
+  font-size: 1.7rem;
+}
+.mui-table-view-cell.mui-collapse .mui-navigate-right:after {
+  font-family: iconfont;
+  content: '\e609';
+  font-size: 1.4rem;
+}
+.mui-table-view-cell.mui-collapse .mui-navigate-right.unable:after {
+  content: '\e609';
+}
+.mui-table-view-cell.mui-collapse.mui-active .mui-navigate-right:after {
+  font-family: iconfont;
+  content: '\e609';
+}
+.mui-table-view-cell.mui-collapse.mui-active .mui-navigate-right.unable:after {
+  content: '\e609';
+}
+.mui-table-view-cell.noCon .noData {
+  margin-left: -1.6rem;
+}
+.mui-table-view-cell.noCon .noData:after {
+  height: 0;
+}
+.mui-table-view-cell.noCon:after {
+  height: 0;
+}

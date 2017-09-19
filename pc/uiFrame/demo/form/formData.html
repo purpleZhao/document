@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>表单数据回显</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/select/select.css">
+		<link rel="stylesheet" href="../libraries/common/errorTip/errorTip.css">
+		<link rel="stylesheet" href="../libraries/common/form/check.css">
+
+		<style>
+			body{
+				min-width: 300px;
+				min-height: 500px;
+			}
+
+			button{
+				margin-top: 30px;
+			}
+
+			h5{
+				margin: 20px 0;
+			}
+		</style>
+
+	</head>
+
+	<body> 
+
+		<div class="inputDom">
+
+			<h5>已数据回显，可以继续输入</h5>
+
+			<div class="card-input-row ">
+				<label>银行预留手机号</label>
+				<!-- 输入框 -->
+				<div class="inputRow">
+					<input type="text" placeholder="请输入银行预留手机号" maxlength="11" value="18212341234" needCheck="true">
+					<!-- 输入框的x按钮 --> 
+					<i class="iconfont">&#xe649;</i>
+				</div>
+				<!-- 错误提示 --> 
+				<div class="error-tip">请输入银行预留手机号</div>
+			</div>
+
+			<h5>已数据回显，不可以继续输入</h5>
+
+			<div class="card-input-row ">
+				<label>银行预留手机号</label>
+				<!-- 输入框 -->
+				<div class="inputRow">
+					<input type="text" placeholder="请输入银行预留手机号" maxlength="11" value="18212341234" disabled="disabled" class="stopClick" needCheck="true">
+					<!-- 输入框的x按钮 --> 
+					<i class="iconfont">&#xe649;</i>
+				</div>
+				<!-- 错误提示 -->
+				<div class="error-tip">请输入银行预留手机号</div>
+			</div>
+
+			<h5>已数据回显，可以继续选择</h5>
+
+			<div class="card-input-row ">
+				<!-- label -->
+				<label><span class="star">*</span>证件类型</label>
+				<!-- 下拉列表 -->
+				<div class="selectWrapper select-input singleSelect">
+				    <p class="selectCopy selectResult" num="4">回乡证</p>
+					<ul class="optionCopy">
+						<li num="0">身份证</li>
+						<li num="4">回乡证</li>
+						<li num="D">台胞证</li>
+						<li num="6">外国护照</li>
+					</ul>
+				</div>
+				<!-- 错误提示 -->
+				<div class="error-tip">请选择证件类型</div>
+			</div>
+
+			<h5>已数据回显，不可以继续选择</h5>
+
+			<div class="card-input-row ">
+				<!-- label -->
+				<label><span class="star">*</span>证件类型</label>
+				<!-- 下拉列表 -->
+				<div class="selectWrapper select-input singleSelect">
+				    <p class="selectCopy selectResult stopClick" num="4">回乡证</p>
+					<ul class="optionCopy">
+						<li num="0">身份证</li>
+						<li num="4">回乡证</li>
+						<li num="D">台胞证</li>
+						<li num="6">外国护照</li>
+					</ul>
+				</div>
+				<!-- 错误提示 -->
+				<div class="error-tip">请选择证件类型</div>
+			</div>
+
+			<h5>已数据回显，可以继续输入</h5>
+
+			<div class="card-input-row ">
+				<!-- 一个textarea -->
+				<label>该textarea的label</label>
+				<textarea needCheck="true">数据回显啦</textarea>
+				<!-- 错误提示 -->
+				<div class="error-tip">请选择证件类型</div>
+			</div>
+
+			<h5>已数据回显，不可以继续输入</h5>
+
+			<div class="card-input-row ">
+				<!-- 一个textarea -->
+				<label>该textarea的label</label>
+				<textarea needcheck="true" class="stopClick" disabled="disabled">数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦数据回显啦</textarea>
+				<!-- 错误提示 -->
+				<div class="error-tip">请选择证件类型</div>
+			</div>
+
+		</div>
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/select/select.js"></script>
+		<script src="../libraries/common/form/formEvent.js"></script>
+
+	</body>
+
+</html>

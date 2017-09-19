@@ -1,0 +1,59 @@
+// .publicOrPrivate{
+//     position: absolute;
+//     z-index: 100;
+//     width: 100%;
+//     background: transparent;
+// }
+
+//选项卡 公募/私募
+.publicOrPrivate{
+    
+    //position: absolute;
+    //z-index: 100;
+    width: 100%;
+    background: transparent;
+    padding: 0.9rem 0;
+    background: @c002;
+    
+    .mui-segmented-control{
+        //width: 12rem;
+        //height: 2.5rem;
+        //line-height: 2.5rem;
+        border: none;
+        border-radius: 2.5rem;
+        margin: 0 auto;
+        width: auto;
+
+        
+        .publicOrPrivateBtn{
+            color: @c005;
+            border: 0.1rem solid @c005;
+            width: 6rem;
+            line-height: 2;
+            text-align: center;
+            display: table-cell;
+
+
+            
+            &:first-child{
+                border-bottom-left-radius: 2.5rem;
+                border-top-left-radius: 2.5rem;
+                border: 0.1rem solid @c005;
+            }
+            &:last-child{
+                border-bottom-right-radius: 2.5rem;
+                border-top-right-radius: 2.5rem;
+                border: 0.1rem solid @c005;
+                //border-left: none;
+            }
+
+            &.mui-active{
+                background-color: @c006;
+                border: 0.1rem solid @c006;
+            }
+        }
+    }
+    .mui-icon{
+        display:none;
+    }
+}

@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 89186 */
+  src: url('//at.alicdn.com/t/font_4ojafdy1f1mm42t9.eot');
+  src: url('//at.alicdn.com/t/font_4ojafdy1f1mm42t9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_4ojafdy1f1mm42t9.woff') format('woff'), url('//at.alicdn.com/t/font_4ojafdy1f1mm42t9.ttf') format('truetype'), url('//at.alicdn.com/t/font_4ojafdy1f1mm42t9.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont";
+  font-size: 16px;
+  font-style: normal;
+}
+body {
+  min-width: 1280px;
+  min-height: 660px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+img,
+i,
+iframe,
+a,
+input {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+input {
+  font-family: "Microsoft YaHei", "Helvetica Neue", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "tahoma", "arial", "sans-serif";
+}
+input::-ms-clear {
+  display: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+.wrap {
+  width: 1200px;
+  margin: 30px auto 60px;
+}
+/* 固定宽度的文本出现省略号的公用样式 */
+.flow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*清空浮动的两种方法,选用clearfix*/
+.clear {
+  clear: both;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+img,
+a {
+  border: none;
+  vertical-align: top;
+}
+/*对input的placeholder属性设置样式*/
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 12px;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #ccc;
+  font-size: 12px;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #ccc;
+  font-size: 12px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 12px;
+}
+/* public */
+/*字体统一样式*/
+.font {
+  font: 16px/1 "Microsoft YaHei", "Helvetica Neue", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "tahoma", "arial", "sans-serif";
+}
+/*圆角方法（四角统一）*/
+/*圆角方法（四角值不统一）*/
+/* 阴影方法box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.10); */
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}

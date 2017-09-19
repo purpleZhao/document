@@ -1,0 +1,608 @@
+/*
+表单样式 公用css   yangjinlai   2016-04-27
+
+2. 更新横向样式   yanjianxia  2017-03-09
+	a. 添加.card-input-column类，为横向的样式;
+	 b. 增加忘记交易密码结构样式;
+ */
+ @import url("./color.less"); 
+ @import url("./reset.less"); 
+ @import url("./components/submitBtn.less"); 
+@import url("./components/errorTip.less"); 
+
+/*表单元素包括在card-input-row class中*/
+.card-input-row {
+	 position: relative;
+	 width: 320px;
+	 margin: 0px 0 24px 0;
+	
+	label {
+		display: block;
+		text-align: left;
+		font-size: 14px;
+		color: @c016;
+		vertical-align: middle;
+		height: 36px;
+		line-height: 36px;
+		*{
+			vertical-align: middle;
+		}
+		.star {
+			display: none;
+			color: @c017;
+			margin-right: 4px;
+		}
+	}
+	.wz_passw { display: none;}
+
+	input {
+		box-sizing: border-box; 
+		width: 320px;
+		font-size: 12px; 
+		.radius (4px);
+		border: 1px solid @c010;
+		height: 36px;
+		padding: 10px 0;
+		line-height: 14px;
+		text-indent: 16px;
+		color:@c016;
+		font-family: "Microsoft YaHei","微软雅黑",Helvetica,"黑体",Arial,Tahoma;
+		&:focus{
+			outline: none;
+			border: 1px solid @c007;
+			box-shadow: 0px 0px 3px 0px @c007;
+			border-radius: 4px;
+		} 
+	 }
+
+	.forget_pasw {
+		display: none;
+		position: absolute;
+		right: 0;
+		line-height: 20px;
+		font-size: 12px;
+		color: @c005;
+		cursor: pointer;
+	}
+
+	 /*输入错误的红色边框*/
+	 input.input_error{
+		border: 1px solid @c017;
+		box-shadow: 0px 0px 3px 0px @c017;
+		border-radius: 4px;
+	 }
+
+	 /*给chrome浏览器去掉表单自动填充的背景色*/
+	 input:-webkit-autofill {
+		background-color: @c002;
+		background-image: none;
+		color: @c001;
+	 }
+
+	 /*label文字不是4个的时候*/
+	 .wordNoFour{
+		vertical-align: middle;
+		text-align: justify;
+		.word{
+			display: inline-block ; /* Opera */
+			padding-left: 100%;
+			width: 0;
+			height: 0;
+		}
+	 }
+	 /*元素充满一行时的x符号*/
+	 .iconfont{
+		display: none;
+		position: absolute;
+		bottom: 1px;
+		right: 2px;
+		font-size: 12px;
+		color: @c010;
+		background: @c002;
+		cursor: pointer;
+		width: 36px;
+		height: 34px;
+		line-height: 36px;
+		text-align: center;
+	 }
+	 
+	 /*一行中放两个元素时的x符号*/
+	 .code{
+		right: 140px;
+	 }
+
+	 /*输入框下方的其他信息*/
+	 .other_msg{
+		color: @c016;
+		margin-bottom: 12px;
+		height: 12px;
+		line-height: 12px;
+		font-size: 12px;
+	 }
+
+	 .recommend {
+		 width: 90px;
+		 height: 16px;
+		 line-height: 16px;
+		 font-size: 14px;
+		 color: @c016;
+		 position: absolute;
+		 left: 332px;
+		 top: 45px;
+		 cursor: pointer;
+		 p{
+			width: 76px;
+			height: 16px;
+			i{
+				color: @c007;
+				font-size: 14px;
+				display: block;
+				width: auto;
+				height: auto;
+				background: transparent;
+				left: 48px;
+				top: -10px;
+			}
+		 }
+		 div{
+			display: none;
+				width: 114px;
+				float: left;
+				background: @c015;
+				border: 1px solid @c005;
+				padding: 7px 0;
+				text-align: center;
+				position: absolute;
+				top: -10px;
+				left: 86px;
+				span{
+				 display: block;
+				 height: 30px;
+				 line-height: 30px;
+				}
+				.triangle_left_out{
+				position: absolute;
+				 left:-18px;
+				 top: 9px;
+				 width: 0;
+				 height: 0;
+				 border: 9px solid;
+				 border-color: transparent @c005 transparent transparent;
+				}
+				.triangle_left{
+				 position: absolute;
+				 left:-16px;
+				 top:10px;
+				 width: 0;
+				 height: 0;
+				 border: 8px solid;
+				 border-color: transparent @c015 transparent transparent;
+			}
+		 }
+		 &:hover{
+			div{
+				display: block;
+			}
+		 }
+		}
+
+	 .quota {
+		display:none;
+		width: 90px;
+		height: 16px;
+		line-height: 16px;
+		font-size: 14px;
+		color: @c016;
+		position: absolute;
+		left: 332px;
+		top: 45px;
+		cursor: pointer;
+		p{
+			width: 76px;
+			height: 16px;
+			i{
+			 color: @c007;
+			 font-size: 14px;
+			 display: block;
+			 width: auto;
+			 height: auto;
+			 background: transparent;
+			 left: 48px;
+			 top: -10px;
+			}
+		}
+		div{
+			display:none;
+			width: 306px;
+			padding: 18px 22px 0;
+			position: absolute;
+			top: 28px;
+			left: -60px;
+			z-index: 99;
+			background: @c002;
+			.box-shadow (0,0, 5px,0, rgba(0,0,0,0.2));
+			.triangle_top_out{
+				position: absolute;
+				left: 78px;
+				top: -19px;
+				width: 0;
+				height: 0;
+				border: 9px solid;
+				border-color: transparent  transparent @z015 transparent;
+			}
+			.triangle_top{
+				position: absolute;
+				left: 79px;
+				top: -16px;
+				width: 0;
+				height: 0;
+				border: 8px solid;
+				border-color: transparent  transparent @c002 transparent;
+			}
+			li{
+			 padding-bottom: 18px;
+			 line-height: 12px;
+			 height:12px;
+			 font-size: 12px;
+			 span {
+				width:70px;
+				display:inline-block;
+				margin-right: 12px;
+			 }
+			 .td1 {
+				width:48px;
+			 }
+			 .td4 {
+				margin-right: 0;
+			 }
+			 .indent26{
+				text-indent: 26px;
+			 }
+			}
+			.td .td1{
+			 color:@c007;
+			}
+		}
+		&:hover{
+			div{
+			 display: block;
+			}
+		}
+	 }
+
+
+	 /* 短信验证码和图文验证码的左边input输入框 */
+	 .sms-code-input {
+			width: 184px;
+			float: left;
+			margin-right: 16px;
+	 }
+	 /*图文验证码的图片*/
+	 .verify-img {
+		width: 120px;
+		height: 36px;
+		vertical-align: bottom;
+		float:left;
+	 }
+	 /*短信验证码的右侧按钮*/
+	 .send-sms-btn {
+			box-sizing: border-box;
+			width: 120px;
+			height:36px;
+			line-height: 34px;
+			border: 1px solid @c010;
+			.radius (4px); 
+			float: left;
+			background: @c002;
+			vertical-align: bottom; 
+			color: @c004;
+			font-size:14px;
+			appearance: button;
+			-moz-appearance:button; /* Firefox */
+			-webkit-appearance:button; /* Safari 和 Chrome */
+			text-indent: 0;
+			font-family: 'Microsoft YaHei',  Helvetica, Arial, Tahoma; 
+			padding:0;
+			outline:none;
+			&:hover{
+				background: @c010;
+				color: @c002;
+			}
+	 }
+	 /*收不到短信验证码 发送语音验证码的提示*/
+	 .voice{
+		position:absolute;
+		right:0;
+		top:76px;
+		color: #f4252d;
+		font-size:12px;
+		display:none; 
+		cursor: pointer;
+	 }
+
+
+	 /*详细地址*/
+	 &.addressArea{
+		
+		textarea{
+			font-family: "Microsoft YaHei", "微软雅黑", Helvetica, "黑体", Arial, Tahoma;
+			width: 288px;
+			height: 60px;
+			padding: 10px 16px;
+			line-height: 20px;
+			font-size: 12px;
+			color: @c016;
+			border: 1px solid @c010;
+			.radius (4px);
+			resize:none;
+			outline: none;
+			&:focus{
+			 outline: none;
+			 border: 1px solid @c007;
+			 box-shadow: 0px 0px 3px 0px @c007;
+			 border-radius: 4px;
+			} 
+		}
+		.error-tip{
+			top:130px;
+		}
+	 }
+
+	 /*新密码输入框*/
+	 &.newpassword-row{
+		/*重置新登录密码错误提示及X的位置*/
+		.error-tip {
+			position: static;
+			line-height: 22px;
+		}
+		.iconfont {
+			top: 37px;
+		}
+		/*新登录密码输入框下面的四条判断信息*/
+		.password-check {
+			 display:none;
+			 text-align: left;
+			 color:@c010;
+			 font-size: 12px;
+			 line-height: 22px;
+			 padding-top: 5px;
+		}
+		.password-check .active {
+			 color: #51aa4d;
+		}
+		
+		/*密码低中高*/
+		.pwdStrenth{
+			 display:none;
+			 width: 333px;
+			 height: 15px;
+			 font-size:10px;
+		}
+		.pwdStrenth span{
+			 background: #f0f0f0;
+			 text-align: center;
+			 margin-left: 1px;
+			 width: 105px;
+			 float:left;
+			 line-height: 15px;
+			 color:#999;
+		}
+		.pwdStrenth span.highlight{
+			 color:white;
+		}
+		.pwdStrenth span.highlight{
+			 background:@c007;
+		}
+
+	 }
+
+
+	 /*给placeholder加样式的兼容*/
+	 .row_placeholer{
+		color: @c010;
+	 }
+	 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+		.row_placeholer;
+	 } 
+	 input:-moz-placeholder, textarea:-moz-placeholder { 
+		.row_placeholer;
+	 } 
+	 input::-moz-placeholder, textarea::-moz-placeholder { 
+		.row_placeholer;
+	 } 
+	 input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+		.row_placeholer;
+	 } 
+
+	 /*stopClick class表示该元素不可使用的状态*/
+	 button.stopClick,input.stopClick,textarea.stopClick{
+			background: @c010;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+	 }
+	 p.stopClick{
+			background: @c010;
+			color: @c016;
+			cursor: auto;
+	 }
+
+
+	 /* 添加起投金额 2017-4-5 yanjianxia*/
+	.in_num { margin-bottom: 8px;}
+	.in_text {
+		position: relative;
+		height: 36px;
+		line-height: 14px;
+		font-size: 12px;
+		.start_num {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			background-color: transparent;
+		}
+		.start_money {
+			position: absolute;
+			top: 11px;
+			left: 16px;
+			color: @c010;
+		}
+		// 和“元”字同结构下的x号
+		.code {
+			right: 34px;
+			width: 14px;
+			top: 1px;
+			cursor: pointer;
+			z-index: 11;
+		}
+		.yuan {
+			position: absolute;
+			top: 1px;
+			right: 16px;
+			line-height: 34px;
+			height: 34px;
+		}
+	}
+	.in_error_tip {
+		visibility: hidden;
+		font-size: 12px;
+		color: #f4252d;
+	}
+	
+	// 确认网站交易密码
+	.sure_passw {
+	    display: none;
+	}
+}
+
+.card-input-column {
+	// overflow: hidden;
+	width: 426px;
+	height: 68px;
+
+	.pTitle { 
+		float: left;
+		margin-right: 20px;
+		height: 20px;
+		padding: 10px 0;
+		width: 123px;
+		color: @c004;
+		line-height: 20px;
+		text-align: right;
+	}
+
+	.input_box {
+		float: left;
+		width: 282px;
+		height: 40px;
+		border: 1px solid @c010;
+	}
+
+	.iconfont {
+		right: 50px;
+		bottom: 30px;
+	}
+
+	.error-tip {
+		top: 45px;
+		left: 143px;
+		font-size: 12px;
+	}
+
+	.forget_pasw { 
+		display: block;
+		top: 45px;
+		right: 0;
+	}
+
+}
+// 赎回份额 + 转出金额公用
+.redemption_div {
+	position: relative;
+	line-height: 14px;
+	.rede_t,
+	.all_redeem {
+		font-size: 14px;
+		color: @c016;
+	}
+	.rede_t { margin-bottom: 8px;}
+	.all_redeem {
+		position: absolute;
+		top: 36px;
+		left: 330px;
+		width: 100px;
+		cursor: pointer;
+	}
+	.yuan {
+		position: absolute;
+		top: 34px;
+		right: 16px;
+		font-size: 12px;
+	}
+	.code {
+		// width: 12px;
+		width: 36px;
+		right: 32px;
+	}
+}
+.outMoney {
+	.code { width: 12px;}
+}
+
+//公募投资金额
+.investment_div {
+	width: 298px;
+	float:left;
+	.unit {
+		position: absolute;
+		top: 8px;
+		right:40px;
+	}
+	input {
+		width: 298px;
+		padding-right: 50px;
+	}
+	.iconfont{
+		right:2px;
+	}
+	.error-tip{
+		top: 40px;
+	}
+}
+
+//本人或本机构是否是实际受益人
+.yesOrNo{ 
+		width: 400px;
+		// height: 70px;
+		p{margin-top: 20px;font-size: 14px;}
+		span{margin-left: 4px}
+		.no{margin-left: 20px}
+		i{display: inline-block;font-style: normal;}
+		.card-input-row{width: auto;}
+		input{margin-left: 23px;
+			height: 36px;
+			width: 150px;
+		}
+		.iconfont{cursor: pointer;font-size: 14px;color: #bbb}
+		.error-tip{
+			left: 68px;
+			top: 40px;
+		}
+		.newAdd{
+			width: 500px;
+			color: #bbbbbb;
+			font-size: 10px;
+			margin-top: 15px;
+			margin-bottom: 28px;
+		}
+}
+.orgYn{
+		font-size: 14px;
+		.secondIcon{margin-left: 16px}
+		.selectCopy{width: 136px}
+		.secondP{
+			// margin-top: 0px
+		}
+		.error-tip{left:66px}
+}

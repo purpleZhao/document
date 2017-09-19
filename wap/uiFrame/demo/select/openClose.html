@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>展开收起动作</title>
+
+		<link rel="stylesheet" href="../libraries/mui/mui.min.css">
+		<link rel="stylesheet" href="../libraries/common/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/common/resetMui.css">
+		<link rel="stylesheet" href="../libraries/common/list/selectMUI.css">
+		<link rel="stylesheet" href="../libraries/common/radio/radio.css">
+		<link rel="stylesheet" href="../libraries/common/list/openClose.css">
+
+		<style>
+			html,body{
+				height: 100%;
+	    		width: 100%;
+			}
+			/*模仿移动端字体大小*/
+			html{
+				font-size: 62.5%
+			}
+			
+		</style>
+	</head>
+
+	<body> 
+
+		<div class="actionWrap">
+
+			<ul class="mui-table-view mui-radio lineMore actionList noMoreList">
+				<li class="mui-table-view-cell">
+					<label singlenum="1000000">
+						<p class="dark name">建设银行(6220)</p><p class="limitMoney">单笔限额500,000，当日限额2,000,000</p>
+					</label>
+
+					<input name="bankList" type="radio" capitalmode="M" singlenum="1000000" tradeacco="10000015" bankaccount="6217000010067046220" bankname="建设银行" bankno="005" bankaccountmask="**** **** **** 6220" checked="checked">
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-radio lineMore actionList noMoreList">
+				<li class="mui-table-view-cell">
+					<label singlenum="1000000">
+						<p class="dark name">建设银行(6220)</p><p class="limitMoney">单笔限额500,000，当日限额2,000,000</p>
+					</label>
+
+					<input name="bankList" type="radio" capitalmode="M" singlenum="1000000" tradeacco="10000015" bankaccount="6217000010067046220" bankname="建设银行" bankno="005" bankaccountmask="**** **** **** 6220">
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-radio lineMore hide actionList">
+				<li class="mui-table-view-cell">
+					<label>
+						<p class="dark name">建设银行(6220)</p><p class="limitMoney">单笔限额500,000，当日限额2,000,000</p>
+					</label>
+					<input name="bankList" type="radio" capitalmode="M" singlenum="1000000" tradeacco="10000015" bankaccount="6217000010067046220" bankname="建设银行" bankno="005" bankaccountmask="**** **** **** 6220">
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-radio lineMore hide actionList">
+				<li class="mui-table-view-cell">
+					<label>
+						<p class="dark name">建设银行(6220)</p><p class="limitMoney">单笔限额500,000，当日限额2,000,000</p>
+					</label>
+					<input name="bankList" type="radio">
+				</li>
+			</ul>
+		</div>
+
+		<div class="actionBtn">
+		</div>
+
+
+		<script src="../libraries/zepto/zepto.js"></script>
+		<script src="../libraries/zepto/fx.js"></script>
+		<script src="../libraries/zepto/deferred.js"></script>
+		<script src="../libraries/zepto/callback.js"></script>
+		<script src="../libraries/mui/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+		</script>
+		<script src="../libraries/common/list/openClose.js"></script>
+
+		<script>
+
+			
+		</script>
+		
+	</body>
+
+</html>

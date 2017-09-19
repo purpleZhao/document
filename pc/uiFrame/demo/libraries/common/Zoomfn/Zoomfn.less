@@ -1,0 +1,50 @@
+/*
+	图片放大查看样式
+ */
+.Zoomfn{
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+}
+.mask{
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    background: #000;
+    opacity: 0.4;
+}
+.closebtn{
+	//display: none;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 902;
+	color:#fff;
+	font-size: 30px !important;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+    	color: #f4252d;
+    }
+}
+.enlargebox{
+	//display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0; 
+	margin: auto;
+	z-index: 901;
+	.enlarge{
+		position: absolute;	
+	}
+}

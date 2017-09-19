@@ -1,0 +1,400 @@
+/**重置mui框架样式
+ * @author yangjinlai 2017-02-14
+ */
+
+@import url("../reset.less");
+@import url("../color.less");
+
+//按钮
+.mui-btn{
+	font-weight: normal;
+	padding: 0;
+    display: block;
+    border: none;
+}
+
+
+input[type],textarea{
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 0;
+    color: @c002;
+    height: 4rem;
+}
+            
+.mui-input-row 
+    .mui-input-clear~.mui-icon-clear, 
+    .mui-input-password~.mui-icon-eye, 
+    .mui-input-speech~.mui-icon-speech{
+        color: inherit;
+        width: 1.6rem;
+        margin-right: 1.2rem;
+        line-height: 100%;
+        font-weight: normal;
+        height: 100%;
+        margin-top: 1.2rem;
+       // position: relative;
+        top: 0;
+        right: 0;
+    }
+
+
+.mui-poppicker{
+    -webkit-transform: none;
+    transform: none;
+}
+
+.mui-btn.mui-active:enabled, 
+.mui-btn:enabled:active, 
+button.mui-active:enabled, 
+button:enabled:active, 
+input[type=button].mui-active:enabled, 
+input[type=button]:enabled:active, 
+input[type=reset].mui-active:enabled, 
+input[type=reset]:enabled:active, 
+input[type=submit].mui-active:enabled, 
+input[type=submit]:enabled:active{
+    color: @c005;
+    background-color: @c006; 
+}
+
+.mui-btn, 
+button, 
+input[type=button], 
+input[type=reset], 
+input[type=submit]{
+    -webkit-transition: none;
+    transition: none;
+}
+
+
+.mui-table-view{
+    background: transparent;
+}
+
+.mui-card .mui-table-view .mui-table-view-cell:last-child, 
+.mui-card .mui-table-view .mui-table-view-divider:last-child{ 
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+} 
+
+.mui-card .mui-table-view .mui-table-view-cell:first-child, 
+.mui-card .mui-table-view .mui-table-view-divider:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+    color: @c006;
+}
+
+.mui-btn-blue.mui-active:enabled, 
+.mui-btn-blue:enabled:active, 
+.mui-btn-primary.mui-active:enabled, 
+.mui-btn-primary:enabled:active, 
+input[type=submit].mui-active:enabled, 
+input[type=submit]:enabled:active{
+    border: 0;
+} 
+
+.mui-input-row label{
+    font-family: "Microsoft YaHei", Arial, "Helvetica";
+}
+
+//复选框及右侧文案（目前实名认证页面底部协议文案用到）
+.mui-checkbox.mui-left {
+    div{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1.2rem;
+        color: @c003;
+        line-height: 1.8rem;
+        padding-left: 2.4rem;
+        font-family: "Microsoft YaHei", Arial, "Helvetica";
+
+        .item1{
+            color: @c003;
+        }
+    }
+
+    input[type=checkbox]{
+        left: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        //vertical-align: top;
+        top: 0.3rem;
+        line-height: 1.6rem;
+         
+
+        &:before{
+            font-size: 1.6rem;
+            line-height: 0;
+            content: '\e668';
+            font-family: inherit; 
+        }
+        &:checked{
+            &:before{
+                color: @c006;
+                content: '\e669';
+            }
+        }
+    }
+}
+
+
+//开关
+.mui-input-row .mui-switch{
+    top: 50%;
+    width: 3rem;
+    height: 1.6rem;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    margin-right: 0;
+    right: 1.2rem;
+    border: 0.1rem solid @c004;
+    border-radius: 2rem;
+    margin-top: 0;
+    position: absolute;
+    box-sizing: content-box;
+
+    &.mui-active{
+        background-color: @c018;
+        border: 0.1rem solid  @c018;
+        .mui-switch-handle{
+            transform: translate(19px,0);
+        }
+
+        &.mui-dragging{
+            .mui-switch-handle{
+                width: 1.4rem;
+                left: -1px;
+            }
+        }
+        
+    }
+
+    .mui-switch-handle{
+        height: 1.4rem;
+        width: 1.4rem;
+        //border: 1;
+        border-radius: 1.6rem;
+        border: 0.1rem solid @c004;
+        box-sizing: content-box;
+        box-shadow: none;
+        top: 0;
+        
+        //left: 0;
+    }
+}
+
+//单选框
+.mui-radio{
+
+    label{
+        color: @c003;
+        font-size: 1.4rem;
+        padding: 0;
+        line-height: 4rem;
+
+        span{
+            display:inline-block;
+            &.txtNotice{
+                font-size: 1.2rem;
+                transform: scale(0.875);
+                transform-origin: left;
+                margin-left: 1rem;
+            }
+        }
+        
+    }
+
+    input[type=radio]{
+        //width: 1.6rem;
+        height: 1.7rem;
+        width: auto;
+        top: 0;
+        //height: inherit;
+        right: 1.2rem;
+        top: 50%;
+        transform: translate(0,-50%);
+        -webkit-transform: translate(0,-50%);
+
+        &:before{
+            font-size: 2rem;
+            //line-height: inherit;
+            position: absolute;
+            right: 0;
+        }
+
+        &:checked:before{
+            color: @c006;
+        }
+    }
+
+    &.mui-left{
+        label{
+            padding: 0 1.5rem 0 2.4rem;
+            color: @c002;
+        }
+
+        input[type=radio]{
+            left: 0;
+            &:before{
+                left: 0;
+            }
+        }
+    }
+}
+
+//底部当前颜色
+.mui-bar-tab .mui-tab-item.mui-active{
+    color: @c006;
+}
+.mui-bar-tab .mui-tab-item .mui-icon{
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+.mui-bar-tab .mui-tab-item{
+    color: @c005;
+    height: 100%;
+}
+
+
+//开关
+// .mui-switch.mui-active{
+//     background-color: @c013;
+//     border: 0.1rem solid  @c013;
+// }
+
+
+//选项卡 公募/私募
+.publicOrPrivate{
+
+    padding: 0.9rem 0;
+    background: @c002;
+    
+    .mui-segmented-control{
+        //width: 12rem;
+        //height: 2.5rem;
+        //line-height: 2.5rem;
+        border: none;
+        border-radius: 2.5rem;
+        margin: 0 auto;
+        width: auto;
+
+        
+        .publicOrPrivateBtn{
+            color: @c005;
+            border: 0.1rem solid @c005;
+            width: 6rem;
+            line-height: 2;
+            text-align: center;
+            display: table-cell;
+            
+            &:first-child{
+                border-bottom-left-radius: 2.5rem;
+                border-top-left-radius: 2.5rem;
+                border: 0.1rem solid @c005;
+            }
+            &:last-child{
+                border-bottom-right-radius: 2.5rem;
+                border-top-right-radius: 2.5rem;
+                border: 0.1rem solid @c005;
+                //border-left: none;
+            }
+
+            &.mui-active{
+                background-color: @c006;
+                border: 0.1rem solid @c006;
+            }
+        }
+    }
+    .mui-icon{
+        display:none;
+    }
+}
+
+
+
+//上拉加载的样式
+.mui-pull{
+    color: @c001;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+  }
+}
+.mui-spinner{
+
+    vertical-align: middle;
+    animation: none;
+    -webkit-animation: none;
+    width: auto;
+    height: auto;
+
+    &.mui-pull-loading{
+
+        transform: rotate(0deg) translateZ(0);
+        transition-duration: 0ms;
+        animation-name: loading;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        -webkit-transform: rotate(0deg) translateZ(0);
+        -webkit-transition-duration: 0ms;
+        -webkit-animation-name: loading;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+    }
+
+    &:after{
+        background-image: inherit;
+        content: '\e602' ;
+        font-family: iconfont;
+
+       color: @c006;
+       font-size: 2rem;
+       transform-origin: 50%;
+       vertical-align: middle;
+       display: block;
+    }
+}
+
+
+//重置mui轮播点的样式
+.mui-slider-indicator{
+    bottom: 1.4rem;
+    height: 0.5rem;
+
+    .mui-indicator{
+        background: @c005;
+        box-shadow: none;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 0.5rem;
+        margin: 0 0.5rem 0 0;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &.mui-active{
+            background: @c006;
+        }
+    }
+}

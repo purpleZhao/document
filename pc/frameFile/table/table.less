@@ -1,0 +1,117 @@
+/*
+	表格  公用样式
+ */
+
+@import url('../reset.less');
+@import url('../color.less');
+
+//表头
+.tableWrapper{
+	
+	//表头
+	.tabHead{
+		text-align: center;
+		color:@a002;
+		background-color:@z015;
+		line-height: 50px;
+		li{
+			float:left;  
+		}
+	}
+
+	.tabBody{
+		
+		ul{
+			line-height: 50px;
+			border-bottom: 1px solid @a005;
+			text-align: center; //默认文字居中
+		}
+
+		li{
+			height: 50px;
+			float:left;
+			font-size:14px;
+			color:@c004;
+		}
+		
+		a{ 
+			display: block;
+			color:@c004;
+		}
+
+
+		//表格里的按钮
+		.table_btn{
+			border:none;
+			height: 30px; 
+			.radius(3px);
+			cursor: pointer;
+		    background: @c007;
+		    color:  @c002;
+		    &:hover{
+		    	background: @c019;
+		    	
+		    }
+
+		}
+
+		/*拥有追加按钮和赎回按钮时候的样式控制  .tabUl_70此类代表li高度是70px的列表*/
+		ul.tabUl_70{
+			line-height: 70px;
+
+			li{
+				height: 70px;
+			}
+			.table_btn{
+				height: 26px;
+				display: block;
+				margin: 6px 0 6px 12px;
+			}
+			.table_btn_70{
+				width:62px;
+				height: 26px; 
+				margin-left: 12px;
+				display: block;
+				border:none;
+				
+				.radius(3px);
+				cursor: pointer;
+			    background: @c007;
+			    color:  @c002;
+			    &:hover{
+			    	background: @c019;
+			    	
+			    }	
+			}
+		}
+		/*拥有追加按钮和赎回按钮时候的样式控制*/
+	}
+	
+
+	li{
+		&.align_rt{
+			//文字右对齐
+			text-align: right;
+		}
+
+		&.align_lt{
+			//文字左对齐
+			text-align: left;
+		}
+		&.align_cen{
+			//文字居中对齐
+			text-align: center;
+		}
+		&.flow{
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			a{
+				overflow: hidden;
+    			white-space: nowrap;
+    			text-overflow: ellipsis;
+			}
+		}
+	}
+
+}

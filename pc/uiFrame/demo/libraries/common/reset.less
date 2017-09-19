@@ -1,0 +1,150 @@
+/***
+ * 样式重置公用
+ * @author PurpleZhao 2016-08-14
+ */   
+@charset"utf-8";
+ //引入色板
+@import url("color.less");
+ //引入iconfont
+@import url("iconfont.less");
+
+body {
+	min-width: 1280px; 
+	min-height: 660px;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,ul,li,img,i,iframe,a,input {
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+	text-decoration: none;
+	outline:none;
+	
+}
+
+input{
+	//font: "Microsoft YaHei","Helvetica Neue","Helvetica Neue","Helvetica","Hiragino Sans GB","tahoma","arial","sans-serif";
+	font-family: "Microsoft YaHei","Helvetica Neue","Helvetica Neue","Helvetica","Hiragino Sans GB","tahoma","arial","sans-serif";
+}
+
+//解决IE部分浏览器自带x的问题
+input::-ms-clear{ display:none;}
+
+// a{
+// 	outline: none;    
+// }
+a:hover{
+	text-decoration: none; 
+}
+img {
+  border: none;  
+  vertical-align: top; 
+}
+
+
+//版块容器 
+.wrap {
+	width: 1200px;
+	margin: 30px auto 60px;  
+} 
+
+/* 固定宽度的文本出现省略号的公用样式 */
+.flow{
+	overflow: hidden;  
+	white-space: nowrap;
+	text-overflow:ellipsis;  
+}
+
+/*清空浮动的两种方法,选用clearfix*/
+.clear {
+	clear: both;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+}
+
+.clearfix {
+	zoom: 1;
+
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+
+}
+
+img,a {
+	border: none;
+	vertical-align: top;
+}
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+	color: @c010;
+	font-size: 12px;
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+color: @c010;
+	font-size: 12px;
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+color: @c010;
+	font-size: 12px;
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+color: @c010;
+	font-size: 12px;
+} 
+
+
+/* public */
+/*字体统一样式*/
+.font {
+	font: 16px/1 "Microsoft YaHei","Helvetica Neue","Helvetica Neue","Helvetica","Hiragino Sans GB","tahoma","arial","sans-serif";
+}
+
+/*圆角方法（四角统一）*/
+.radius (@radius:5px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+}
+/*圆角方法（四角值不统一）*/
+.border (@radius:5px 5px 5px 5px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+}
+
+/* 阴影方法box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.10); */
+.box-shadow (@a: 0, @b: 2px, @c: 4px,@d:0, @r:rgba(0,0,0,0.10)) {
+  box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+  -o-box-shadow: @arguments;
+}             
+                    
+
+//透明遮罩
+.mask{
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:900;
+	background:@c001;
+	opacity: 0.4;
+	filter:alpha(opacity=40);
+}

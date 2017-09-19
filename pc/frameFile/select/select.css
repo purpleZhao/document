@@ -1,0 +1,157 @@
+
+
+.selectWrapper {
+  position: relative;
+  font-size: 14px;
+  color: #7d7c7d;
+  margin: 20px auto 0;
+}
+.selectWrapper .selectCopy {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  font-size: 12px;
+}
+.selectWrapper .selectCopy:after{
+  content: '';
+  position: absolute;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ccc;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.selectWrapper .optionCopy {
+  font-size: 12px;
+  display: none;
+  min-height: 160px;
+  position: absolute;
+  background: #fff;
+  line-height: 40px;
+  z-index: 4;
+}
+.selectWrapper .optionCopy li {
+  cursor: pointer;
+}
+.selectWrapper .tip {
+  position: absolute;
+  bottom: 13px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ccc;
+  z-index: 2;
+}
+
+/*第一种下拉列表 select-box*/
+.selectWrapper.select-box {
+  margin: 20px auto 0;
+  width: 238px;
+  height: 30px;
+  line-height: 30px;
+}
+.selectWrapper.select-box .less {
+  /*display: inline-block;*/
+  margin: 0 3px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+}
+.selectWrapper.select-box .title {
+  float: left;
+  padding-right: 20px;
+  cursor: default;
+}
+.selectWrapper.select-box .selectCopy {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 160px;
+  text-indent: 14px;
+}
+.selectWrapper.select-box .selectCopy.selectResult {
+  color: #333;
+}
+.selectWrapper.select-box .optionCopy {
+  width: 160px;
+  padding: 10px 0;
+  top: 30px;
+  left: 76px;
+  border-top: 2px solid #f4cf5c;
+  line-height: 40px;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  -webkit-box-shadow: 2px 2px 4px 0 #ccc;
+  -ms-box-shadow: 2px 2px 4px 0 #ccc;
+  -o-box-shadow: 2px 2px 4px 0 #ccc;
+}
+.selectWrapper.select-box .optionCopy li {
+  padding-left: 20px;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+}
+.selectWrapper.select-box .optionCopy li:hover {
+  color: #f4cf5c;
+}
+
+
+/*第二种下拉列表select-input，默认为多级，添加singleSelect表示单级*/
+.selectWrapper.select-input {
+  //height: 36px;
+  margin: 0px 0 22px 0;
+}
+.selectWrapper.select-input .selectCopy {
+  //width: 320px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  text-indent: 16px;
+  color: #c8c8c8;
+  box-sizing: border-box;
+}
+.selectWrapper.select-input .selectCopy.selectResult {
+  color: #333;
+}
+.selectWrapper.select-input .optionCopy {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  width: 318px;
+  max-height: 238px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.selectWrapper.select-input .optionCopy li {
+  height: 34px;
+  line-height: 34px;
+  overflow: hidden;
+  padding: 0 0 0 15px;
+  color: #333;
+  margin: 0;
+  //width: 304px;
+}
+.selectWrapper.select-input .optionCopy li:hover {
+  background: #f4cf5c;
+}
+.selectWrapper.select-input.floatLeft .selectCopy {
+  float: left;
+}
+.selectWrapper.select-input.floatLeft .error-tip {
+  top: 42px;
+}

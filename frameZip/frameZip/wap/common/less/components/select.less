@@ -1,0 +1,91 @@
+/**
+ * 下拉列表样式 公用
+ * 选择自然人/机构下拉时使用 
+ * @author yangjinlai 2017-02-14
+ */
+
+.selectWrapper{
+	//margin-left: 1.6rem;
+	//height: 4rem;
+    //line-height: 4rem;
+    font-size: 1.4rem;
+    color: @c001;
+    border-bottom: 1px solid @c004;
+
+	.selectCopy{
+		overflow: hidden;
+		width: 100%;
+		//margin-left: 1.6rem;
+        height: 4rem;
+        line-height: 4rem;
+        //padding-left: 1.7rem;
+        position: relative;
+        //border-bottom: 1px solid #e5e5e5;
+    
+		&.border{
+			border-bottom: 1px solid @c004;
+		}
+		
+		&.rotate{
+		    &:after{
+		        content: '\e62a';
+		    }
+		}
+
+		&:before{
+			content: '\e66a';
+            //position: absolute;
+            //left: 0;
+            //top: 0;
+            font-family: iconfont;
+    		float: left;
+            font-size: 2.1rem;
+            color: @c003;
+            width: 2.1rem;
+		}
+		&:after{
+			content: '\e609';
+			font-family: iconfont;
+			position: absolute;
+			right: 1.3rem;
+			top: 0;
+			font-size: 1.4rem;
+		}
+
+		.select_txt{
+            font-family: "Microsoft YaHei", Arial, "Helvetica";
+            font-size: 1.4rem;
+    		float: left;
+            
+			/* 选中状态 */
+			&.selectResult{
+				color: @c002;
+			}
+		}
+	}
+
+	.optionCopy{
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+
+		li{
+		    height: 4rem;
+		    font-size: 1.4rem;
+		    line-height: 4rem;
+		    overflow: hidden;
+		    border-bottom: 1px solid @c004;
+		    color: @c003;
+		    margin-left: 2.5rem;
+
+		    &:last-child{
+		    	border-bottom: none;
+		    }
+
+		    &.liSelect{
+		    	color: @c002;
+		    }
+		}
+	}
+}
+

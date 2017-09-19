@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>textarea</title>
+
+		<link rel="stylesheet" href="../libraries/mui/mui.min.css">
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/common/resetMui.css">
+		<link rel="stylesheet" href="../libraries/common/form/newFormMui.css">
+
+		<style>
+			html,body{
+				height: 100%;
+	    		width: 100%;
+			}
+
+			/*模仿移动端字体大小*/
+			html{
+				font-size: 62.5%
+			}
+			
+		</style>
+	</head>
+
+	<body> 
+
+		<div class="form-wrap">
+
+			<!--textarea-->
+			<div class="formBox hasPad left">
+				<div class="formList">						
+					<div class="mui-input-row">
+						<textarea rows="2" placeholder="请输入通讯地址" maxlength="100"></textarea>
+					</div>
+				</div>  
+			</div>
+
+		</div>
+
+
+		<script src="../libraries/zepto/zepto.js"></script>
+		<script src="../libraries/mui/mui.min.js"></script>
+		<script src="../libraries/common/form/autoTextarea.js"></script>
+		<script type="text/javascript">
+			autoTextarea( $('textarea')[0] )
+		</script>
+		
+	</body>
+
+</html>

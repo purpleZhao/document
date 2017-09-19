@@ -1,0 +1,77 @@
+
+.stepAction{
+	width: 100%;
+	display: table;
+}
+
+.stepAction li{
+	position: relative;
+	display: table-cell ;
+	text-align: center;
+}
+
+.stepAction li span{
+	display: block;
+	margin: 0 auto;
+}
+
+.stepAction li .iconfont{
+	font-size: 36px;
+	visibility: hidden;
+	text-align: center;
+}
+
+.stepAction li .outerCircle{
+	width: 26px;
+	height: 26px;
+	border: 1px solid #faebba;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	background: rgba(244, 207, 92, 0.4);
+	margin-top: 8px;
+	visibility: hidden;
+}
+
+.stepAction li .line{
+	width: 100%;
+    height: 1px;
+    margin-top: -15px;
+    background: #7d7c7d;
+}
+
+.stepAction li .innerCircle{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	background: #7d7c7d;
+	margin-top: -8px;
+}
+
+.stepAction li .title{
+	margin-top: 16px;
+}
+
+.stepAction li.active .line{
+	height: 3px;
+	margin-top: -16px;
+}
+
+.stepAction li.active .iconfont, 
+.stepAction li.active .title{
+	color: #f4cf5c;
+}
+
+.stepAction li.active .iconfont, 
+.stepAction li.active .outerCircle{
+	visibility: visible;
+}
+
+.stepAction li.active .line,
+.stepAction li.active .innerCircle{
+	background: #f4cf5c;
+}

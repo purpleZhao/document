@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>日历</title>
+
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/calendar/calendar.css">
+
+	</head>
+
+	<body> 
+
+		<div class="calendarBox">
+		    <i class="iconfont minus">&#xe60f;</i>
+		    <div class="iconfont beginput" id="txtBeginDate">
+		    	<input class="calendarinput" placeholder="请选择开始日期" />
+		    </div>
+		    <div class="iconfont endinput" id="txtEndDate">
+		    	<input class="calendarinput" placeholder="请选择结束日期"/>
+		    </div>
+		</div>
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/calendar/calendar.js"></script>
+
+		<script>
+
+			//获取当天时间
+			var lowertime = new Date();
+			var uppertime = new Date();
+
+			  //结束时间日历
+			  function endTime(){
+			    $("#txtEndDate").calendar({
+			        complement: true,
+			        readonly: true, 
+			        lowerLimit: lowertime,// 日期下限
+			        callback: function () {
+			          if($("#txtBeginDateCalendar")){
+			            $("#txtBeginDateCalendar").remove();
+			          }
+			          uppertime=new Date($("#txtEndDate").find('input').val().split("-").join("/"));
+			          beginTime()
+			        }
+			    });
+			  }
+
+			  //开始时间日历
+			  function beginTime(){
+			    $("#txtBeginDate").calendar({
+			        complement: true,  
+			        readonly: true, 
+			        upperLimit: uppertime,   //日期上限
+			        callback: function () {                              
+			          if($("#txtEndDateCalendar")){
+			            $("#txtEndDateCalendar").remove();
+			          }
+			          lowertime=new Date($("#txtBeginDate").find('input').val().split("-").join("/"));
+			          endTime();
+			        }
+			    }); 
+			  }
+
+			  //页面打开时需要执行一次
+			  beginTime();
+			  endTime();
+  
+		</script>
+		
+	</body>
+
+</html>

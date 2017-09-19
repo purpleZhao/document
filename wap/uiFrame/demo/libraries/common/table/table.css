@@ -1,0 +1,31 @@
+.table p.title {
+  color: #7d7c7d;
+  margin-bottom: 0.2rem;
+}
+.table div {
+  margin-top: 1.2rem;
+}
+.table div span {
+  display: inline-block;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+.table div span {
+    border-left: 0.1rem solid #fff;
+    border-right: 0.1rem solid #fff;
+}
+.table div span:first-child{
+  border-left: 0;
+}
+.table div span:last-child{
+  border-right: 0;
+}
+.table div p {
+  background: #f9f9f9;
+}
+.table div p.header {
+  background: #d8d8d8;
+}

@@ -1,0 +1,125 @@
+/*start 样式重置*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+img,
+i,
+iframe,
+a,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+strong,
+var,
+em,
+i {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  display: block;
+  width: 100%;
+}
+del {
+  text-decoration: line-through;
+}
+input[type=search] {
+  -webkit-appearance: none;
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*样式重置 end*/
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  font-family: "Microsoft YaHei", Arial, "Helvetica";
+  //background: #f2f2f2;
+  color: #333;
+  font-size: 1.2rem;
+  /*加了relative会引发iscroll失效*/
+  /*position: relative;*/
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #bbb;
+}
+::-moz-placeholder {
+  color: #369;
+}
+::-webkit-input-placeholder {
+  color: #369;
+}
+:-ms-input-placeholder {
+  color: #369;
+}
+input[type=text]:disabled,
+input[type=number]:disabled,
+input[type=tel]:disabled,
+input[type=password]:disabled {
+  color: #333;
+  -webkit-text-fill-color: #333;
+}

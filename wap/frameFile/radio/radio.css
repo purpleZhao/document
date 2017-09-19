@@ -1,0 +1,42 @@
+.mui-radio label {
+  color: #7d7c7d;
+  font-size: 1.4rem;
+  padding: 0;
+  line-height: 4rem;
+}
+.mui-radio label span {
+  display: inline-block;
+}
+.mui-radio label span.txtNotice {
+  font-size: 1.2rem;
+  transform: scale(0.875);
+  transform-origin: left;
+  margin-left: 1rem;
+}
+.mui-radio input[type=radio] {
+  height: 1.7rem;
+  width: auto;
+  top: 0;
+  right: 1.2rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+}
+.mui-radio input[type=radio]:before {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+}
+.mui-radio input[type=radio]:checked:before {
+  color: #f4cf5c;
+}
+.mui-radio.mui-left label {
+  padding: 0 1.5rem 0 2.4rem;
+  color: #333;
+}
+.mui-radio.mui-left input[type=radio] {
+  left: 0;
+}
+.mui-radio.mui-left input[type=radio]:before {
+  left: 0;
+}

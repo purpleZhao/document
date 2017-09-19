@@ -1,0 +1,192 @@
+/***
+ * 下拉菜单
+ * 
+ */
+@import url("../color.less");       
+
+/*所有下拉列表公用*/
+.selectWrapper{
+
+	position: relative;
+	font-size: 14px;
+	color: @c004;
+	margin: 20px auto 0;
+	
+	/*p标签*/
+	.selectCopy{
+		border: 1px solid @c010;
+		cursor: pointer;
+		position: relative;
+		z-index: 3;
+		font-size: 12px;
+	}
+
+	/*ul*/
+	.optionCopy{
+		font-size: 12px;
+		display: none;
+		min-height: 160px;
+		position: absolute;
+		background: @c002;
+		line-height: 40px;
+		z-index: 4;
+
+		li{
+			cursor: pointer;
+		}
+	}
+
+	.tip{
+		position: absolute;
+		bottom: 13px;
+		right: 10px;
+		width: 0;
+	    height: 0;
+	    border-left: 7px solid transparent;
+	    border-right: 7px solid transparent;
+	    border-top: 7px solid @c010;
+	    z-index: 2;
+	}
+
+	/*首页下拉列表*/
+	&.select-box{
+		margin: 20px auto 0;
+		width: 238px;
+		height: 30px;
+		line-height: 30px;
+
+		.less {
+			/*display: inline-block;*/
+			margin: 0 3px;
+			height: 28px;
+			line-height: 28px;
+			position: relative;
+		}
+
+		.title{
+			float: left;
+			padding-right: 20px;
+			cursor: default;
+		}
+
+		.selectCopy{
+			float: left;
+			height: 30px;
+		    line-height: 30px;
+		    width: 160px;
+			text-indent: 14px;
+			&.selectResult{
+		    	//选中状态颜色
+		    	color: @c016;
+		    }
+		}
+
+		.optionCopy{
+			width: 160px;
+			padding: 10px 0;
+			top: 30px;
+			left: 76px;
+			border-top: 2px solid @c007;
+			line-height: 40px;
+			box-shadow: 2px  2px 4px 0 @c010;
+		  	-webkit-box-shadow:  2px  2px 4px 0 @c010;
+		  	-ms-box-shadow:  2px  2px 4px 0 @c010;
+		  	-o-box-shadow:  2px  2px 4px 0 @c010;
+
+		  	li{
+		  		padding-left: 20px;
+			    width: 140px;
+			    height: 40px;
+			    cursor: pointer;
+
+		  		&:hover{
+		  			color: @c007;
+		  		}
+		  	}
+		}
+	}
+
+	/*我的账户下拉列表*/
+	&.select-input{
+		//height: 36px;
+		margin:0px 0 22px 0;
+		
+		.selectCopy{
+	    	//width: 320px;
+		    height: 36px;
+		    line-height: 36px;
+		    border-radius: 4px;
+		    -webkit-border-radius: 4px;
+		    -ms-border-radius: 4px;
+		    -o-border-radius: 4px; 
+		    text-indent: 16px;
+		    color: #c8c8c8;
+		    box-sizing: border-box;
+
+		    &.selectResult{
+		    	//选中状态颜色
+		    	color: @c016;
+		    }
+		} 
+
+		.optionCopy{
+			border: 1px solid @c010;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-ms-border-radius: 4px;
+			-o-border-radius: 4px;
+	  		width: 318px;
+	  		height: 238px;
+	  		overflow-x: hidden;
+	  		overflow-y: auto;
+	  		top: 35px;
+	  		left:0;
+		  	width: 100%;
+		  	box-sizing: border-box;
+
+	  		li{
+			    height: 34px;
+			    line-height: 34px;
+			    overflow: hidden;
+			    padding: 0 0 0 15px;
+			    color: @c016;
+			    margin: 0;
+			    //width: 304px;
+
+			    &:hover{
+			    	background: @c007;
+			    }
+	  		}
+		}
+
+		.error-tip{
+			top: 42px;
+			line-height: 12px;
+		}
+
+		/*单级，会覆盖多级的样式*/
+		&.singleSelect{
+
+			.error-tip{
+				top: 76px;
+			}
+		}
+
+		&.floatLeft{
+
+			.selectCopy{
+				float: left; 
+			}
+
+			.error-tip{
+				top: 42px;
+			}
+	    	
+	    }
+	}
+
+	
+
+}
+
+

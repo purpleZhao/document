@@ -1,0 +1,1638 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>复选框 | 前端组UI框架</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/logo.png" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../wap/uiFrame/switch.html" />
+    
+    
+    <link rel="prev" href="../../wap/uiFrame/radio.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.5.7"
+        data-chapter-title="复选框"
+        data-filepath="wap/uiFrame/checkbox.md"
+        data-basepath="../.."
+        data-revision="Wed Jul 05 2017 13:49:56 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <!-- 这里添加一个logo -->
+    <!-- <img src="../../gitbook/images/logo.png""> -->
+
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> PC端框架</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="pc/index.html">
+            
+                
+                    <a href="../../pc/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="pc/uiFrame/basicCss.html">
+            
+                
+                    <a href="../../pc/uiFrame/basicCss.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        基本样式文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="pc/uiFrame/iconfont.html">
+            
+                
+                    <a href="../../pc/uiFrame/iconfont.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        iconfont
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="pc/uiFrame/meta.html">
+            
+                
+                    <a href="../../pc/uiFrame/meta.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        公用meta
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+            <span><b>1.5.</b> UI组件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="pc/uiFrame/Slider.html">
+            
+                
+                    <a href="../../pc/uiFrame/Slider.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                        图片轮播
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="pc/uiFrame/tab.html">
+            
+                
+                    <a href="../../pc/uiFrame/tab.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                        tab选项卡
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="pc/uiFrame/paging.html">
+            
+                
+                    <a href="../../pc/uiFrame/paging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.3.</b>
+                        
+                        分页
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="pc/uiFrame/calendar.html">
+            
+                
+                    <a href="../../pc/uiFrame/calendar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.4.</b>
+                        
+                        日历
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="pc/uiFrame/elasticLayer.html">
+            
+                
+                    <a href="../../pc/uiFrame/elasticLayer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.5.</b>
+                        
+                        弹出层
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="pc/uiFrame/loading.html">
+            
+                
+                    <a href="../../pc/uiFrame/loading.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.6.</b>
+                        
+                        loading加载中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="pc/uiFrame/noData.html">
+            
+                
+                    <a href="../../pc/uiFrame/noData.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.7.</b>
+                        
+                        暂无数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="pc/uiFrame/help.html">
+            
+                
+                    <a href="../../pc/uiFrame/help.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.8.</b>
+                        
+                        帮助和提示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="pc/uiFrame/download.html">
+            
+                
+                    <a href="../../pc/uiFrame/download.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.9.</b>
+                        
+                        下载图标
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="pc/uiFrame/table.html">
+            
+                
+                    <a href="../../pc/uiFrame/table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.10.</b>
+                        
+                        表格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="pc/uiFrame/button.html">
+            
+                
+                    <a href="../../pc/uiFrame/button.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.11.</b>
+                        
+                        按钮
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="pc/uiFrame/check.html">
+            
+                
+                    <a href="../../pc/uiFrame/check.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.12.</b>
+                        
+                        复选框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="pc/uiFrame/errorTip.html">
+            
+                
+                    <a href="../../pc/uiFrame/errorTip.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.13.</b>
+                        
+                        错误提示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="pc/uiFrame/sideBar.html">
+            
+                
+                    <a href="../../pc/uiFrame/sideBar.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.14.</b>
+                        
+                        页面右下角浮动导航
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.15" data-path="pc/uiFrame/goTop.html">
+            
+                
+                    <a href="../../pc/uiFrame/goTop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.15.</b>
+                        
+                        回到顶部
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.16" data-path="pc/uiFrame/stepAction.html">
+            
+                
+                    <a href="../../pc/uiFrame/stepAction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.16.</b>
+                        
+                        用户操作步骤及当前标识
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.17" data-path="pc/uiFrame/zoomFn.html">
+            
+                
+                    <a href="../../pc/uiFrame/zoomFn.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.17.</b>
+                        
+                        图片放大查看
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18" >
+            
+            <span><b>1.5.18.</b> 下拉选项</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.18.1" data-path="pc/uiFrame/select.html">
+            
+                
+                    <a href="../../pc/uiFrame/select.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.18.1.</b>
+                        
+                        单级
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18.2" >
+            
+            <span><b>1.5.18.2.</b> 多级</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.18.2.1" data-path="pc/uiFrame/address.html">
+            
+                
+                    <a href="../../pc/uiFrame/address.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.18.2.1.</b>
+                        
+                        省市区地址联动
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.18.3" data-path="pc/uiFrame/selectData.html">
+            
+                
+                    <a href="../../pc/uiFrame/selectData.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.18.3.</b>
+                        
+                        数据回显的下拉选择
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19" >
+            
+            <span><b>1.5.19.</b> 列表</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.19.1" data-path="pc/uiFrame/list.html">
+            
+                
+                    <a href="../../pc/uiFrame/list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.19.1.</b>
+                        
+                        普通列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.19.2" data-path="pc/uiFrame/slideToggleList.html">
+            
+                
+                    <a href="../../pc/uiFrame/slideToggleList.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.19.2.</b>
+                        
+                        内容可展开收起的列表
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20" >
+            
+            <span><b>1.5.20.</b> 表单</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.20.1" data-path="pc/uiFrame/basicForm.html">
+            
+                
+                    <a href="../../pc/uiFrame/basicForm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.1.</b>
+                        
+                        表单元素及基本结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.2" data-path="pc/uiFrame/input.html">
+            
+                
+                    <a href="../../pc/uiFrame/input.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.2.</b>
+                        
+                        input输入框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.3" data-path="pc/uiFrame/textarea.html">
+            
+                
+                    <a href="../../pc/uiFrame/textarea.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.3.</b>
+                        
+                        textarea
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.4" data-path="pc/uiFrame/formSelect.html">
+            
+                
+                    <a href="../../pc/uiFrame/formSelect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.4.</b>
+                        
+                        表单中的下拉选项
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.5" data-path="pc/uiFrame/formRed.html">
+            
+                
+                    <a href="../../pc/uiFrame/formRed.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.5.</b>
+                        
+                        红色*——必填的表单元素
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.6" data-path="pc/uiFrame/formError.html">
+            
+                
+                    <a href="../../pc/uiFrame/formError.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.6.</b>
+                        
+                        表单中的错误提示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.7" data-path="pc/uiFrame/formData.html">
+            
+                
+                    <a href="../../pc/uiFrame/formData.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.7.</b>
+                        
+                        表单数据回显
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.20.8" data-path="pc/uiFrame/formEvent.html">
+            
+                
+                    <a href="../../pc/uiFrame/formEvent.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.20.8.</b>
+                        
+                        formEvent.js说明
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+            <span><b>1.6.</b> js工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="pc/uiFrame/ie.html">
+            
+                
+                    <a href="../../pc/uiFrame/ie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        判断IE版本
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="pc/uiFrame/getDate.html">
+            
+                
+                    <a href="../../pc/uiFrame/getDate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        获取指定日期
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="pc/uiFrame/splitUrl.html">
+            
+                
+                    <a href="../../pc/uiFrame/splitUrl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        拆分并获取地址栏参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="pc/uiFrame/utils.html">
+            
+                
+                    <a href="../../pc/uiFrame/utils.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.4.</b>
+                        
+                        utils
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="pc/uiFrame/ajax.html">
+            
+                
+                    <a href="../../pc/uiFrame/ajax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.5.</b>
+                        
+                        ajax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="pc/uiFrame/base64.html">
+            
+                
+                    <a href="../../pc/uiFrame/base64.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.6.</b>
+                        
+                        base64加密
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="pc/uiFrame/toChinese.html">
+            
+                
+                    <a href="../../pc/uiFrame/toChinese.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.7.</b>
+                        
+                        数字改成中文大写
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+            <span><b>1.7.</b> 事件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="pc/event/jQuery.html">
+            
+                
+                    <a href="../../pc/event/jQuery.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.1.</b>
+                        
+                        jQuery事件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> wap框架</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="wap/index.html">
+            
+                
+                    <a href="../../wap/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="wap/uiFrame/mui.html">
+            
+                
+                    <a href="../../wap/uiFrame/mui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        mui
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="wap/uiFrame/iconfont.html">
+            
+                
+                    <a href="../../wap/uiFrame/iconfont.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        iconfont
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="wap/uiFrame/basicCss.html">
+            
+                
+                    <a href="../../wap/uiFrame/basicCss.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        基本样式文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+            <span><b>2.5.</b> UI组件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="wap/uiFrame/card.html">
+            
+                
+                    <a href="../../wap/uiFrame/card.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                        卡片视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="wap/uiFrame/grid.html">
+            
+                
+                    <a href="../../wap/uiFrame/grid.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.2.</b>
+                        
+                        多个元素水平放置（如：底部导航）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" >
+            
+            <span><b>2.5.3.</b> 列表</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.3.1" data-path="wap/uiFrame/list.html">
+            
+                
+                    <a href="../../wap/uiFrame/list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.3.1.</b>
+                        
+                        列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3.2" data-path="wap/uiFrame/openClose.html">
+            
+                
+                    <a href="../../wap/uiFrame/openClose.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.3.2.</b>
+                        
+                        展开收起动作
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="wap/uiFrame/button.html">
+            
+                
+                    <a href="../../wap/uiFrame/button.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.4.</b>
+                        
+                        按钮
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="wap/uiFrame/help.html">
+            
+                
+                    <a href="../../wap/uiFrame/help.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.5.</b>
+                        
+                        帮助和提示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.6" data-path="wap/uiFrame/radio.html">
+            
+                
+                    <a href="../../wap/uiFrame/radio.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.6.</b>
+                        
+                        单选框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5.7" data-path="wap/uiFrame/checkbox.html">
+            
+                
+                    <a href="../../wap/uiFrame/checkbox.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.7.</b>
+                        
+                        复选框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.8" data-path="wap/uiFrame/switch.html">
+            
+                
+                    <a href="../../wap/uiFrame/switch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.8.</b>
+                        
+                        开关
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.9" data-path="wap/uiFrame/loading.html">
+            
+                
+                    <a href="../../wap/uiFrame/loading.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.9.</b>
+                        
+                        loading加载中
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.10" data-path="wap/uiFrame/table.html">
+            
+                
+                    <a href="../../wap/uiFrame/table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.10.</b>
+                        
+                        表格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.11" data-path="wap/uiFrame/noData.html">
+            
+                
+                    <a href="../../wap/uiFrame/noData.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.11.</b>
+                        
+                        暂无数据
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.12" data-path="wap/uiFrame/tip.html">
+            
+                
+                    <a href="../../wap/uiFrame/tip.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.12.</b>
+                        
+                        黑色提示条
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.13" data-path="wap/uiFrame/stepAction.html">
+            
+                
+                    <a href="../../wap/uiFrame/stepAction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.13.</b>
+                        
+                        用户操作步骤及当前标识
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.14" >
+            
+            <span><b>2.5.14.</b> 弹出层</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.14.1" data-path="wap/uiFrame/elasticlayer.html">
+            
+                
+                    <a href="../../wap/uiFrame/elasticlayer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.14.1.</b>
+                        
+                        弹出层
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.14.2" data-path="wap/uiFrame/ConfirmAwayNowPage.html">
+            
+                
+                    <a href="../../wap/uiFrame/ConfirmAwayNowPage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.14.2.</b>
+                        
+                        确认离开当前页面并弹出确认弹框
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.15" >
+            
+            <span><b>2.5.15.</b> 选择器</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.15.1" data-path="wap/uiFrame/picker.html">
+            
+                
+                    <a href="../../wap/uiFrame/picker.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.15.1.</b>
+                        
+                        基于mui的选择器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.15.2" data-path="wap/uiFrame/select.html">
+            
+                
+                    <a href="../../wap/uiFrame/select.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.15.2.</b>
+                        
+                        非基于mui
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.16" data-path="wap/uiFrame/pullup&amp;goTop.html">
+            
+                
+                    <a href="../../wap/uiFrame/pullup&amp;goTop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.16.</b>
+                        
+                        上拉加载+回到顶部
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.17" >
+            
+            <span><b>2.5.17.</b> 左右滑动切换</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.17.1" data-path="wap/uiFrame/tabScroll_2.html">
+            
+                
+                    <a href="../../wap/uiFrame/tabScroll_2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.17.1.</b>
+                        
+                        导航上的按钮数据确定时
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.17.2" data-path="wap/uiFrame/tabScroll.html">
+            
+                
+                    <a href="../../wap/uiFrame/tabScroll.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.17.2.</b>
+                        
+                        导航上的按钮数据不确定时
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.18" data-path="wap/uiFrame/sliderMui.html">
+            
+                
+                    <a href="../../wap/uiFrame/sliderMui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.18.</b>
+                        
+                        图片轮播
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.19" >
+            
+            <span><b>2.5.19.</b> 表单</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.19.1" data-path="wap/uiFrame/basicForm.html">
+            
+                
+                    <a href="../../wap/uiFrame/basicForm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.19.1.</b>
+                        
+                        表单元素及基本结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.19.2" data-path="wap/uiFrame/input.html">
+            
+                
+                    <a href="../../wap/uiFrame/input.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.19.2.</b>
+                        
+                        input输入框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.19.3" data-path="wap/uiFrame/textarea.html">
+            
+                
+                    <a href="../../wap/uiFrame/textarea.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.19.3.</b>
+                        
+                        textarea
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.19.4" data-path="wap/uiFrame/formSelect.html">
+            
+                
+                    <a href="../../wap/uiFrame/formSelect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.19.4.</b>
+                        
+                        表单中的下拉选项
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.19.5" data-path="wap/uiFrame/formData.html">
+            
+                
+                    <a href="../../wap/uiFrame/formData.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.19.5.</b>
+                        
+                        表单数据回显
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.20" data-path="wap/uiFrame/module.html">
+            
+                
+                    <a href="../../wap/uiFrame/module.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.20.</b>
+                        
+                        资讯类页面模板
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" >
+            
+            <span><b>2.6.</b> js工具</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="wap/uiFrame/getDate.html">
+            
+                
+                    <a href="../../wap/uiFrame/getDate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.1.</b>
+                        
+                        获取指定日期
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="wap/uiFrame/splitUrl.html">
+            
+                
+                    <a href="../../wap/uiFrame/splitUrl.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.2.</b>
+                        
+                        拆分并获取地址栏参数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="wap/uiFrame/utils.html">
+            
+                
+                    <a href="../../wap/uiFrame/utils.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.3.</b>
+                        
+                        utils
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="wap/uiFrame/ajax.html">
+            
+                
+                    <a href="../../wap/uiFrame/ajax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.4.</b>
+                        
+                        ajax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.5" data-path="wap/uiFrame/erweima.html">
+            
+                
+                    <a href="../../wap/uiFrame/erweima.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.5.</b>
+                        
+                        生成二维码
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" >
+            
+            <span><b>2.7.</b> 事件</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="wap/event/zepto.html">
+            
+                
+                    <a href="../../wap/event/zepto.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.1.</b>
+                        
+                        Zepto事件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="wap/event/mui.html">
+            
+                
+                    <a href="../../wap/event/mui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.2.</b>
+                        
+                        mui事件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >前端组UI框架</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x590D;&#x9009;&#x6846;">&#x590D;&#x9009;&#x6846;</h1>
+<p>&#x57FA;&#x4E8E;<code>mui</code>&#x7684;&#x590D;&#x9009;&#x6846;&#x7EC4;&#x4EF6;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x79FB;&#x52A8;&#x7AEF;&#x9879;&#x76EE;&#x505A;&#x4E86;&#x6837;&#x5F0F;&#x4E0A;&#x7684;&#x91CD;&#x7F6E;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x9700;&#x8981;&#x5F15;&#x5165;&#x6837;&#x5F0F;&#x6587;&#x4EF6;<code>checkbox.less</code>&#x3002;</p>
+<p><code>mui</code>&#x4E2D;&#x7684;&#x590D;&#x9009;&#x6846;&#x5728;&#x5DE6;&#x6216;&#x5728;&#x53F3;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x4F46;&#x672C;&#x6846;&#x67B6;&#x4E2D;&#xFF0C;&#x590D;&#x9009;&#x6846;&#x90FD;&#x662F;&#x5728;&#x5DE6;&#x8FB9;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x5BF9;&#x4F4D;&#x4E8E;&#x5DE6;&#x8FB9;&#x7684;&#x60C5;&#x51B5;&#x505A;&#x4E86;&#x6837;&#x5F0F;&#x91CD;&#x7F6E;&#x3002;</p>
+<p><img src="img/check.png" alt="PNG"></p>
+<h3 id="dom&#x7ED3;&#x6784;">DOM&#x7ED3;&#x6784;</h3>
+<pre><code>&lt;div class=&quot;mui-checkbox mui-left&quot;&gt;
+      &lt;div&gt;&#x6B64;&#x5904;&#x53EF;&#x653E;&#x7F6E;&#x4EFB;&#x610F;&#x5185;&#x5BB9;&lt;/div&gt;
+      &lt;input name=&quot;checkbox1&quot; value=&quot;Item 1&quot; type=&quot;checkbox&quot; class=&quot;iconfont&quot;&gt;
+&lt;/div&gt;
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<ol>
+<li><p>&#x590D;&#x9009;&#x6846;&#x7684;&#x5BB9;&#x5668;&#x662F;<code>mui-checkbox</code>&#xFF0C;&#x7ED9;&#x5176;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;<code>class</code>&#x4E3A;<code>mui-left</code>&#x540E;&#xFF0C;&#x590D;&#x9009;&#x6846;&#x4FBF;&#x51FA;&#x73B0;&#x5728;&#x5DE6;&#x8FB9;</p>
+</li>
+<li><p>&#x7531;&#x4E8E;&#x79FB;&#x52A8;&#x7AEF;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x590D;&#x9009;&#x6846;&#x65C1;&#x8FB9;&#x4E00;&#x822C;&#x662F;&#x5404;&#x79CD;&#x534F;&#x8BAE;&#xFF0C;&#x70B9;&#x51FB;&#x9700;&#x8981;&#x8DF3;&#x8F6C;&#x5230;&#x534F;&#x8BAE;&#x9875;&#x9762;&#xFF0C;&#x56E0;&#x6B64;&#x628A;<code>input</code>&#x6807;&#x7B7E;&#x524D;&#x9762;&#x7684;<code>label</code>&#x6807;&#x7B7E;&#x6362;&#x6210;&#x4E86;<code>div</code>&#xFF0C;&#x5728;<code>div</code>&#x4E2D;&#xFF0C;&#x53EF;&#x4EFB;&#x610F;&#x653E;&#x7F6E;&#x6240;&#x9700;&#x5185;&#x5BB9;</p>
+</li>
+<li><p>&#x5728;<code>input</code>&#x6807;&#x7B7E;&#x4E0A;&#x6DFB;&#x52A0;<code>checked=&quot;checked&quot;</code>&#x53EF;&#x4EE5;&#x4F7F;&#x5176;&#x9ED8;&#x8BA4;&#x9009;&#x4E2D;</p>
+</li>
+<li><p>&#x5728;<code>input</code>&#x6807;&#x7B7E;&#x4E0A;&#x6DFB;&#x52A0;<code>disabled</code>&#x53EF;&#x4EE5;&#x4F7F;&#x5176;&#x7981;&#x7528;</p>
+</li>
+</ol>
+<footer class="page-footer"><span class="copyright">&#x524D;&#x7AEF;&#x6846;&#x67B6;&#x2014;&#x2014;&#x7248;&#x672C;2.3 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
+2017-06-28 14:09:20
+</span></footer>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../wap/uiFrame/radio.html" class="navigation navigation-prev " aria-label="Previous page: 单选框"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../wap/uiFrame/switch.html" class="navigation navigation-next " aria-label="Next page: 开关"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-book-summary-scroll-position-saver/book-summary-scroll-position-saver.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"expandable-chapters":{},"tbfed-pagefooter":{"copyright":"前端框架——版本2.3"},"splitter":{},"book-summary-scroll-position-saver":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

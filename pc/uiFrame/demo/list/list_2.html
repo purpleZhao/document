@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>列表内容可展开收起</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/list/list.css">
+
+		<style type="text/css">
+			body{
+				min-width: 500px;
+			}
+		</style>
+
+	</head>
+
+	<body> 
+
+
+		<ul class="listUl">  
+		      <li class="item">
+		          <div class="title">
+		              <span class="message">标题标题标题标题标题标题</span>
+		              <i class="iconfont down">&#xe623;</i>
+		          </div>
+		          <div class="detail">展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容</div>
+		      </li>
+		      <li class="item">
+		          <div class="title">
+		              <span class="message">标题标题标题标题标题标题</span>
+		              <i class="iconfont down">&#xe623;</i>
+		          </div>
+		          <div class="detail">展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容</div>
+		      </li>
+		      <li class="item">
+		          <div class="title">
+		              <span class="message">标题标题标题标题标题标题</span>
+		              <i class="iconfont down">&#xe623;</i>
+		          </div>
+		          <div class="detail">展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容</div>
+		      </li>
+		      <li class="item">
+		          <div class="title">
+		              <span class="message">标题标题标题标题标题标题</span>
+		              <i class="iconfont down">&#xe623;</i>
+		          </div>
+		          <div class="detail">展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容</div>
+		      </li>
+		      <li class="item">
+		          <div class="title">
+		              <span class="message">标题标题标题标题标题标题</span>
+		              <i class="iconfont down">&#xe623;</i>
+		          </div>
+		          <div class="detail">展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容展开内容</div>
+		      </li>
+		</ul>
+		
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script>
+
+			$(document).on('click','.listUl .item .title',function(){
+				var $this = $(this);
+
+				if( $this.next('.detail').is(":visible") ){
+					$this.find(".down").html("&#xe623;");
+                }else{
+                	$this.find(".down").html("&#xe624;");
+                }
+                $this.next('.detail').slideToggle();
+            })
+
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+.stepAction{
+	width: 100%;
+	//display: table;
+}
+
+.stepAction li{
+	//position: relative;
+	//display: table-cell ;
+	border-top: 0.2rem solid #d8d8d8;
+	text-align: center;
+}
+
+.stepAction li .stepLi{
+	position: relative;
+	top: -0.7rem;
+}
+
+.stepAction li .stepLi span{
+	background: #d8d8d8;
+	width: 1.4rem;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	display: block;
+	color: #fff;
+	border-radius: 1.4rem;
+	margin: 0 auto;
+	margin-bottom: 1.2rem;
+}
+
+.stepAction li .stepLi p{
+	color: #7d7c7d;
+	font-size: 1.4rem;
+}
+
+.stepAction li.action span{
+	background: #339900;
+}
+

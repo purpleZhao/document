@@ -1,0 +1,183 @@
+/**
+ * 整理项目中表单样式，表单基于mui表单，因此这里重置了mui表单样式
+ * @author yangjinlai 2017-05-04
+ *
+ * 表单区域为form-wrap
+ * 每一行表单元素 为.formList
+ * input输入框区域为.mui-input-row
+ * mui-input-row左右可能有icon，或图文验证码，或短信验证码等，根据实际情况添加class：
+	 * 1. 左边有icon的，如注册页面，在formList上添加class formIconLeft
+	 * 2. 右边有其他元素的，如图文验证码，短信验证码，眼睛等：
+	 * 		1）图文验证码 ，在formList上添加class verifyCode
+	 *    	2) 短信验证码，在formList上添加class numberCode
+	 *    	3）理财师工号，在formList上添加class fina
+	 *    	4）眼睛，即相当于右边有icon的，在formList上添加class formIconRight
+ * 眼睛icon的class--noEye
+ * 理财师工号i标签的class--sign
+ * 收不到验证码，即发送语音验证码按钮的class--noCode
+ * 图文验证码中，图片img标签的class--twyzm_img
+ * 短信验证码中，发送验证码按钮的class--dxyzmBtn
+ *
+ * .mui-input-row及其之内的结构提出作为公用结构放在common/views下
+ * 
+ * 
+ */
+.form-wrap {
+  /*ul列表*/
+}
+.form-wrap .iconfont {
+  font-size: 2.1rem;
+  color: #7d7c7d;
+  width: 2.1rem;
+}
+.form-wrap .formList {
+  border-bottom: 0.1rem solid #e5e5e5;
+  color: #bbb;
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+}
+.form-wrap .formList:last-child {
+  border-bottom: 0;
+}
+.form-wrap .formList.formIconLeft .mui-input-row {
+  left: 2.1rem;
+}
+.form-wrap .formList.formIconRight .mui-input-row {
+  right: 3.3rem;
+}
+.form-wrap .formList.verifyCode .mui-input-row {
+  right: 8.5rem;
+}
+.form-wrap .formList.verifyCode .twyzm_img {
+  width: 7.3rem;
+  height: 2.6rem;
+  margin: 0.8rem 1.2rem 0 0;
+  float: right;
+}
+.form-wrap .formList.numberCode .mui-input-row {
+  right: 1.2rem;
+}
+.form-wrap .formList.numberCode .dxyzmBtn {
+  float: right;
+  font-size: 1.4rem;
+  color: #f4cf5c;
+  line-height: 4rem;
+  text-align: right;
+}
+.form-wrap .formList.fina .sign {
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.form-wrap .formList.fina input {
+  text-indent: 1rem;
+}
+.form-wrap .formList .mui-input-row {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.form-wrap .noEye,
+.form-wrap .help {
+  float: right;
+  margin-right: 1.2rem;
+  line-height: 4rem;
+}
+.form-wrap .noEye {
+  font-size: 2.1rem;
+}
+.form-wrap .noEye:before {
+  content: '\e60d';
+  float: right;
+}
+.form-wrap .noEye.open:before {
+  content: '\e606';
+}
+.form-wrap .help {
+  font-size: 1.6rem;
+  width: 1.6rem;
+}
+.form-wrap .help:before {
+  content: '\e60a';
+  float: right;
+}
+.form-wrap .mui-table-view {
+  color: #bbb;
+}
+.form-wrap .mui-table-view .mui-table-view-cell {
+  padding: 0;
+  width: 100%;
+}
+.form-wrap .mui-table-view .mui-table-view-cell:after {
+  height: 1px;
+}
+.form-wrap .mui-table-view:last-child li:after {
+  height: 0;
+}
+.form-wrap .formBox {
+  height: 4.1rem;
+  line-height: 4rem;
+  position: relative;
+  border-bottom: 0.1rem solid #e5e5e5;
+}
+.form-wrap .formBox.hasPad {
+  padding: 1rem 0;
+  line-height: normal;
+  height: auto;
+}
+.form-wrap .formBox.hasPad .formList {
+  height: 2rem;
+}
+.form-wrap .formBox.hasPad .formList textarea {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.form-wrap .formBox label {
+  float: left;
+}
+.form-wrap .formBox .formList {
+  margin-right: 1.6rem;
+  text-align: right;
+}
+.form-wrap .formBox .formList input {
+  text-align: right;
+}
+.form-wrap .formBox textarea {
+  text-align: right;
+}
+.form-wrap .formBox.left textarea {
+  text-align: left;
+}
+.noCode {
+  visibility: hidden;
+  margin: 0.8rem 1.2rem 0 0;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: right;
+}
+.noCode.show {
+  visibility: visible;
+}
+.line6 label {
+  width: 6rem;
+}
+.line6 .formList {
+  margin-left: 8rem;
+}
+.line14 label {
+  width: 14rem;
+}
+.line14 .formList {
+  margin-left: 16rem;
+}
+.line10 label {
+  width: 10rem;
+}
+.line10 .formList {
+  margin-left: 12rem;
+}

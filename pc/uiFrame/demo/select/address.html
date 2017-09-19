@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>省市区地址联动</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/select/select.css">
+
+		<style>
+			body{
+				min-width: 300px;
+				min-height: 500px;
+			}
+		</style>
+
+	</head>
+
+	<body> 
+
+		<div id="sjld">
+			
+			<!-- 省份 -->
+			<div id="shenfen" class="card-input-row selectWrapper select-input">
+			    <p  class="selectCopy"></p>
+				<ul class="optionCopy">
+				</ul>
+			</div>
+			
+			<!-- 城市 -->
+			<div id="chengshi"  class="card-input-row selectWrapper select-input">
+			    <p  class="selectCopy"></p>
+				<ul class="optionCopy">
+				</ul>
+			</div>
+			
+			<!-- 区域 -->
+			<div id="quyu" class="card-input-row selectWrapper select-input">
+			    <p  class="selectCopy"></p>
+				<ul class="optionCopy">
+				</ul>
+			</div>
+
+		</div>
+
+
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/select/addressJS.js"></script>
+		<script type="text/javascript">
+			//初始化地址联动插件
+			$("#sjld").sjld("#shenfen","#chengshi","#quyu");
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>表单中的下拉选项</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/select/select.css">
+		<link rel="stylesheet" href="../libraries/common/form/check.css">
+
+		<style>
+			body{
+				min-width: 300px;
+				min-height: 500px;
+			}
+		</style>
+
+	</head> 
+
+	<body> 
+
+		<div class="inputDom">
+			<!-- 这是一个下拉列表 -->
+			<div class="card-input-row ">
+
+				<label>证件类型</label>
+
+				<div class="selectWrapper select-input singleSelect">
+				    <p class="selectCopy" num="">请选择证件类型</p>
+					<ul class="optionCopy">
+						<li num="0">身份证</li>
+						<li num="4">回乡证</li>
+						<li num="D">台胞证</li>
+						<li num="6">外国护照</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/select/select.js"></script>
+
+	</body>
+
+</html>

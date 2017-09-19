@@ -1,0 +1,149 @@
+/**
+ * 弹出层插件样式
+ * @author   yangjinlai
+ * @time  2016-09-20
+ * update yanjianxia
+ * 2017-01-06 样式统一优化
+ */
+
+//金色标题颜色
+@elastic_gold: #c09f66;
+//普通文字颜色
+@elastic_red: #7d7c7d;
+//特殊文字颜色
+@elastic_grey:  #333;
+//圆角大小：
+@elastic_radius: 5px;
+
+.elasticLayer{
+	
+	position: fixed;
+	background-color: rgba(0,0,0,0.7);
+	//display: none;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+	//透明层
+	// .elasticMask{
+	//     position: absolute;
+	//     width: 100%;
+	//     height: 100%;
+	//     background: #000;
+	//     opacity: 0.7;
+	//     filter: alpha(opacity=70);
+	//     z-index: 100;
+	//     top: 0;
+	//     left: 0;
+	// }
+
+	//弹层div
+	.elasticWrapper{
+		position: relative;
+		display: table;
+		transform: translate(-50%,-50%);
+	    top: 50%;
+	    left: 50%;
+	    // width: 352px;
+	    //height: 190px;
+	    //margin: auto;
+	    text-align: center;
+	    z-index: 105;
+	    border-radius: @elastic_radius;
+	    //display: table;
+
+		.elasticMid{
+			    display: table-cell;
+		}
+
+		//标题
+	    .elasticTitle{
+	    	  color: @c007;
+			    margin-top: 22px;
+			    font-size: 20px;
+			    line-height: 20px;
+	    }
+
+		.elasticTxt{
+			min-height: 100px;
+			width: 312px;
+			padding: 14px 40px;
+			background: @c002;
+			border-top-left-radius: @elastic_radius;
+			border-top-right-radius: @elastic_radius;
+		}
+			
+
+			//第一行和第二行文字
+			// .elasticP1,.elasticP2{
+			// 	  font-size: 18px;
+			//     color: @elastic_red;
+			//     line-height: 18px;
+			//     margin-bottom: 18px;
+
+			// 		//灰色文字
+			//     .sTxt{
+			// 			color: @elastic_grey;
+			//     }
+			// }
+
+			.elastic_p{
+				font-size: 16px;
+		    color: @elastic_red;
+		    line-height: 32px;
+
+				//灰色文字
+		    .sTxt{
+					color: @elastic_grey;
+		    }
+
+		    &:last-child{
+		    	margin-bottom: 0px;
+		    }
+			}
+
+			// .elasticP1{
+			// 	margin-bottom: 18px;
+			// }
+
+			//按钮区
+			.elasticButtons{
+				border-top: 1px solid @c024;
+		    height: 54px;
+		    line-height: 54px;
+			}
+
+			//确定按钮
+			.elasticYes,.elasticCel{
+		    	// width: 175px;
+		    	width: 50%;
+			    text-align: center;
+			    border: none;
+			    font-size: 18px;
+			    height: 54px;
+			    float: left;
+			    margin: 0;
+			    padding: 0;
+			    background: @c002;
+			    cursor: pointer;
+			    outline: none;
+		  }
+
+		  .elasticYes{
+		  	color: @c004;
+		  	border-right: 1px solid @c024;
+		  	border-bottom-left-radius: @elastic_radius;
+		  }
+			
+			.elasticCel{
+				  border-right: 0px;
+			    color: @c007;
+			    border-left: 1px solid @c024;
+			    border-bottom-right-radius: @elastic_radius;
+			}
+			
+			.elasticYes:hover,
+			.elasticCel:hover { font-weight: bold;}
+	}
+}

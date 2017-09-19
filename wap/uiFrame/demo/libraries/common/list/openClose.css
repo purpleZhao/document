@@ -1,0 +1,57 @@
+/**
+ * 展开收起的银行卡列表样式
+ * @author yanginlai 2017-05-05
+ */
+.actionWrap .mui-table-view .mui-table-view-cell:after{
+      height: 1px;
+}
+.actionWrap .mui-table-view:last-child .mui-table-view-cell:after{
+      height: 0px;
+}
+.actionList:last-child{
+  border-bottom: 0.1rem solid #e5e5e5;
+}
+.actionWrap {
+  overflow: hidden;
+}
+.actionBtn{
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1;
+  color: #7d7c7d;
+}
+.actionBtn:before {
+  content: '展开';
+  font-size: 1rem;
+  font-family: "Microsoft YaHei", Arial, "Helvetica";
+}
+.actionBtn:after {
+  font-size: 1rem;
+  content: '\e609';
+  color: #bbb;
+  font-family: "iconfont";
+}
+.actionBtn.active:before {
+  content: '收起';
+}
+.actionBtn.active:after {
+  content: '\e62a';
+}
+.mui-radio.lineMore label {
+  line-height: 1.4rem;
+  padding: 1.2rem 0;
+}
+.mui-radio.lineMore label p {
+  margin-bottom: 1rem;
+  color: #bbb;
+}
+.mui-radio.lineMore label p:last-child {
+  margin-bottom: 0;
+}
+.mui-radio.lineMore label p.dark {
+  color: #7d7c7d;
+}
+.mui-radio.hide {
+  display: none;
+}

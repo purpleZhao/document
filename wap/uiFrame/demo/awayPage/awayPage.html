@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>轮播图</title>
+
+		<link rel="stylesheet" href="../libraries/mui/mui.min.css">
+
+		<style>
+			html,body{
+				height: 100%;
+	    		width: 100%;
+			}
+			.mui-slider-indicator {
+			  bottom: 1.4rem;
+			  height: 0.5rem;
+			}
+			.mui-slider-indicator .mui-indicator {
+			  background: #fff;
+			  box-shadow: none;
+			  width: 0.5rem;
+			  height: 0.5rem;
+			  border-radius: 0.5rem;
+			  margin: 0 0.5rem 0 0;
+			}
+			.mui-slider-indicator .mui-indicator:last-child {
+			  margin-right: 0;
+			}
+			.mui-slider-indicator .mui-indicator.mui-active {
+			  background: #f4cf5c;
+			}
+		</style>
+	</head>
+
+	<body> 
+
+		
+
+		<script src="../libraries/zepto/zepto.js"></script>
+		<script src="../libraries/mui/mui.min.js"></script>
+		<script src="../libraries/common/js/components/sliderMui.js"></script>
+
+		<script>
+
+			mui.init();
+
+			var imgArr = [{
+				imgUrl: './1.jpg', 
+				linkUrl: 'http://www.baidu.com'
+			},
+			{
+				imgUrl: './2.jpg', 
+				linkUrl: 'http://www.baidu.com'
+			},
+			{
+				imgUrl: './3.jpg', 
+				linkUrl: 'http://www.baidu.com'
+			},
+			{
+				imgUrl: './4.jpg', 
+				linkUrl: 'http://www.baidu.com'
+			}];
+
+			Slider( $('.banner'), imgArr );
+		</script>
+		
+	</body>
+
+</html>

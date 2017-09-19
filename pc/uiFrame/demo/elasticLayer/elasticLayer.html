@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>弹出层</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/elasticLayer/elasticLayer.css">
+
+	</head>
+
+	<body> 
+
+		<button>点击这里</button>
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/elasticLayer/elasticLayer.js"></script>
+
+		<script>
+
+			$('button').on('click', function(t){
+
+				//需要传递给组件的参数
+				var obj = {
+		           title: '提示', //大标题
+		           p: '<p class="elastic_p">这是一个弹出层</p>',
+		           callback : function(t){ //确定按钮的回调函数
+		                
+		           },  
+		           zIndex: 100, //z-index
+			    }
+
+			    //弹出层初始化	
+				$.elasticLayer(obj);
+			})
+			
+		</script>
+		
+	</body>
+
+</html>

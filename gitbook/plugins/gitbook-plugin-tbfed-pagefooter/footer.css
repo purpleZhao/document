@@ -1,0 +1,20 @@
+.page-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #808080;
+  /*这里新加样式*/
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  min-width: 770px;
+}
+.page-footer a {
+  color: #808080!important;
+  text-decoration: underline!important;
+}
+.footer-modification {
+  float: right;
+}

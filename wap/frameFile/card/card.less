@@ -1,0 +1,22 @@
+/*
+    所有页面公用的MUI卡片视图样式
+ */
+
+.mui-card{
+    margin: 0;
+    padding-left: 1.6rem;
+    border-radius: 0;
+    box-shadow: 0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    background: @c005;
+    display: block;
+    //需要有上边距的，加这个class
+    &.marginTop{
+        margin-top: 0.8rem;
+    }
+
+    //有内容需要水平居中的
+    .centerWrap{
+        margin-left: -1.6rem;
+    }   
+}

@@ -1,0 +1,139 @@
+/**
+ * MUI  下拉列表相关样式
+ * @author yangjinlai 2017-02-23
+ */
+
+@import url("../color.less");
+//引入重置mui样式文件
+@import url("./resetMUI.less");
+
+/*ul列表*/
+.mui-table-view{
+    //border-bottom: 0.1rem solid @c004;
+    
+    &:after, &:before{
+        height: 0;
+    }
+
+    &:last-child{
+        border-bottom: 0;
+    }
+    
+    .mui-table-view-cell{
+        padding: 0;
+        // width: 100%;
+        
+        &:after{
+        	left: 0;
+        	background-color: @c004;
+        	height: 1px;
+	    	 -webkit-transform: inherit; 
+			 transform: inherit;
+        }
+
+        &:last-child{
+	        &:after{
+	            height: 0;
+	        }
+	    }
+
+        &.mui-active{
+            margin-top: 0;
+            background-color: @c005;
+        }
+        
+        >a:not(.mui-btn).mui-active{
+            background: rgba(0,0,0,0);
+        }
+
+        a:not(.mui-btn){
+            margin: 0;
+            padding: 0;
+            line-height: 4rem;
+
+            &:after{
+                //font-size: 1.4rem;
+                color: @c001;
+                right: 1.2rem;
+                line-height: 4rem;
+            }
+        }
+        
+        //已选择的颜色改变
+        .hasSelect{
+            color: @c002;
+        }
+
+        .word{
+            position: absolute;
+            right: 1.2rem;
+            top: 0;
+            line-height: 4rem;
+
+            &.hasRight{
+                right: 3rem;
+            }
+        }
+    }
+}
+
+//列表箭头
+//向右
+//1. 无mui-collapse
+.mui-navigate-right{
+    &:after{
+        content: '\e600';
+        font-family: iconfont;
+        font-size: 1.7rem; 
+    }
+}
+//向下，带mui-collapse
+.mui-table-view-cell.mui-collapse{
+
+    .mui-navigate-right{
+        &:after{
+            font-family: iconfont;
+            content: '\e609';
+            font-size: 1.4rem;
+        }
+
+        &.unable{
+            &:after{
+                content: '\e609';
+            }
+        }
+    }
+
+    &.mui-active{ //重置mui-active时的样式
+        .mui-navigate-right{
+            &:after{
+                font-family: iconfont;
+                content: '\e609';
+            }
+
+            &.unable{
+                &:after{
+                    content: '\e609';
+                }
+            }
+        }
+    }
+    
+}
+
+//列表暂无数据时，去掉最底下的边框
+.mui-table-view-cell{
+    &.noCon{
+        .noData{
+            margin-left: -1.6rem;
+
+            &:after{
+                height: 0;
+            }
+        }
+        &:after{
+            height: 0;
+        }
+    }
+    
+}

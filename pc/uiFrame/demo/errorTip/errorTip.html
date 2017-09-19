@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>错误提示</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/errorTip/errorTip.css">
+
+		<style type="text/css">
+			button{
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+
+	<body> 
+
+
+		<button>点击这里</button>
+
+		<p class="error-tip">这是一条错误提示</p>
+
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+
+		<script>
+
+			$('button').on('click', function(){
+				$('.error-tip').show();
+			})
+
+			
+		</script>
+		
+	</body>
+
+</html>

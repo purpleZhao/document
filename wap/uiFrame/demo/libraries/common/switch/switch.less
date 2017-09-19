@@ -1,0 +1,60 @@
+//开关
+
+
+.mui-switch-wrap{ 
+
+    label{
+        display: inline-block;
+        float: none;
+        width: 100%;
+        color: #7d7c7d;
+        font-size: 1.4rem;
+        padding: 0;
+        line-height: 4rem;
+        .txt{
+            color: #f4cf5c;
+        }
+    }
+
+    .mui-switch{
+        top: 50%;
+        width: 3rem;
+        height: 1.6rem;
+        transform: translate(0,-50%);
+        -webkit-transform: translate(0,-50%);
+        margin-right: 0;
+        right: 1.2rem;
+        border: 0.1rem solid @c004;
+        border-radius: 2rem;
+        margin-top: 0;
+        position: absolute;
+        box-sizing: content-box;
+
+        &.mui-active{
+            background-color: @c018;
+            border: 0.1rem solid  @c018;
+            .mui-switch-handle{
+                transform: translate(19px,0);
+                -webkit-transform: translate(19px,0);
+            }
+
+            &.mui-dragging{
+                .mui-switch-handle{
+                    width: 1.4rem;
+                    left: -1px;
+                }
+            }
+            
+        }
+
+        .mui-switch-handle{
+            height: 1.4rem;
+            width: 1.4rem;
+            border-radius: 1.6rem;
+            border: 0.1rem solid @c004;
+            box-sizing: content-box;
+            box-shadow: none;
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+
+/*第一种tab标签*/
+.tabTypeOne .tabHeader{
+	border-bottom: 1px solid #eee;
+	font-size: 0;
+}
+
+.tabTypeOne .tabHeader .tab{
+	width: 214px;
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 3px solid transparent;
+	text-align: center;
+	cursor: pointer;
+	color: #7d7c7d;
+	font-size: 18px;
+    margin-bottom: -3px;
+}
+
+.tabTypeOne .tabHeader .tab.active{
+	font-weight: bold;
+	color: #f4cf5c;
+	border-bottom-color: #f4cf5c;
+}
+
+.tabTypeOne .tabCopy{
+	width: 100%;
+}
+.tabTypeOne .tabContent{
+	display: none;
+}
+
+.tabTypeOne .tabContent:first-child{
+	display: block;
+}
+
+
+
+/*第二种tab标签*/
+.tabTypeTwo .tabHeader{
+	font-size: 0;
+}
+
+.tabTypeTwo .tabHeader .tab{
+	width: 214px;
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	border-top: 2px solid transparent;
+	text-align: center;
+	cursor: pointer;
+	color: #7d7c7d;
+	font-size: 18px;
+    margin-bottom: -3px;
+}
+
+.tabTypeTwo .tabHeader .tab:first-child{
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid transparent;
+}
+
+.tabTypeTwo .tabHeader .tab:last-child{
+	border-bottom: 1px solid #eee;
+}
+
+.tabTypeTwo .tabHeader .tab.active{
+	font-weight: bold;
+	color: #f4cf5c;
+	border-top-color: #f4cf5c;
+}
+
+.tabTypeTwo .tabCopy{
+	width: 100%;
+}
+.tabTypeTwo .tabContent{
+	display: none;
+}
+
+.tabTypeTwo .tabContent:first-child{
+	display: block;
+}

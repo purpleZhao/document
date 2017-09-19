@@ -1,0 +1,45 @@
+/**
+ * 底部导航 
+ * @author yangjinlai 2017-03-10
+ */
+
+@import url("../../../common/less/color.less");
+
+.bottomNav{
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	left: 0;
+	background: @c002;
+	height: 4.9rem;
+	z-index: 200;
+	
+	.bottomEle{
+		height : 100%;
+
+		a{
+			height: 100%;
+			width: 100%;
+			display: block; 
+			color: @c005;
+			text-align: center;
+			padding-top: 0.6rem;
+		}
+	}
+
+	.iconfont{
+		font-size: 1.9rem;
+		margin-bottom: 0.5rem;
+		display: block;
+	}
+
+	.mui-tab-label{
+		font-size: 1.2rem;
+		transform: scale(0.875); //9px
+		transform-origin: center;
+		display: block;
+		height: 0.9rem;
+		    line-height: 0.9rem;
+	}
+}
+

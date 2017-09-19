@@ -1,0 +1,269 @@
+/**
+ * 整理项目中表单样式，表单基于mui表单，因此这里重置了mui表单样式
+ * @author yangjinlai 2017-05-04
+ *
+ * 表单区域为form-wrap
+ * 每一行表单元素 为.formList
+ * input输入框区域为.mui-input-row
+ * mui-input-row左右可能有icon，或图文验证码，或短信验证码等，根据实际情况添加class：
+	 * 1. 左边有icon的，如注册页面，在formList上添加class formIconLeft
+	 * 2. 右边有其他元素的，如图文验证码，短信验证码，眼睛等：
+	 * 		1）图文验证码 ，在formList上添加class verifyCode
+	 *    	2) 短信验证码，在formList上添加class numberCode
+	 *    	3）理财师工号，在formList上添加class fina
+	 *    	4）眼睛，即相当于右边有icon的，在formList上添加class formIconRight
+ * 眼睛icon的class--noEye
+ * 理财师工号i标签的class--sign
+ * 收不到验证码，即发送语音验证码按钮的class--noCode
+ * 图文验证码中，图片img标签的class--twyzm_img
+ * 短信验证码中，发送验证码按钮的class--dxyzmBtn
+ *
+ * .mui-input-row及其之内的结构提出作为公用结构放在common/views下
+ * 
+ * 
+ */
+
+@import url("../reset.less");
+@import url("../color.less");
+
+//引入重置mui样式文件
+@import url("./resetMUI.less");
+
+
+.form-wrap{
+
+	//icon
+	.iconfont{
+		//float: left;
+		font-size: 2.1rem;
+		color: @c003;
+		width: 2.1rem;
+	}
+
+	.mui-input-row{
+		position: absolute;
+		top:0;
+		right: 0;
+		left: 0;
+		bottom:0;
+	}
+
+	//每一行表单元素（输入类，非选择）
+	.formList{
+		border-bottom: 0.1rem solid @c004;
+		color: @c001;
+		//box-sizing: content-box;
+		height: 4rem;
+		line-height: 4rem;
+		position: relative;
+
+		//最后一行去掉底部边框
+		&:last-child{
+			border-bottom: 0;
+		}
+
+		//左边有icon
+		&.formIconLeft{
+			.mui-input-row{
+				left: 2.1rem;
+			}
+		}
+		
+		//右边有icon
+		&.formIconRight{
+			.mui-input-row{
+				right: 3.3rem;
+			}
+			
+		}
+
+		//图文验证码
+		&.verifyCode{
+			.mui-input-row{
+				right: 8.5rem;
+			}
+			.twyzm_img{
+				width: 7.3rem;
+				height: 2.6rem;
+				margin: 0.8rem 1.2rem 0 0;
+				float: right;
+			}
+		}
+
+		//短信验证码
+		&.numberCode{
+			.mui-input-row{
+				right: 9rem;
+			} 
+
+			.dxyzmBtn{
+				float: right;
+				margin-right: 1.2rem;
+				font-size: 1.4rem;
+				color: @c006;
+				line-height: 4rem;
+			}
+		}
+		
+		//理财师工号
+		&.fina{
+			//理财师工号的H
+			.sign{
+				color: @c002;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			input{
+				text-indent: 1rem;
+			}
+		}
+
+
+		
+	}
+
+	.noEye, .help{
+		float: right;
+		margin-right:1.2rem;
+		line-height: 4rem;
+	}
+	
+	//眼睛的iconfont
+	.noEye{
+		font-size: 2.1rem;
+		//font-family: iconfont;
+		&:before{
+			content: '\e60d';
+			float: right;
+		}
+		&.open{
+			&:before{
+				content: '\e606';
+			}
+		}
+	}
+
+	.help{
+		font-size: 1.6rem;
+		width: 1.6rem;
+		&:before{
+			content: '\e60a';
+			float: right;
+		}
+	}
+
+	/*ul列表*/
+	.mui-table-view{
+	    color: @c001;
+	    
+	    .mui-table-view-cell{
+	        padding: 0;
+	        width: 100%;
+
+	        &:after{
+	            height: 1px;
+	        }
+	    }
+
+	    &:last-child{
+	        li:after{
+	            height: 0;
+	        }
+	    }
+	}
+
+	textarea{
+	   //min-height:6rem; 
+	   height:100%;
+	   min-height: 2rem;
+	   box-sizing: border-box;
+	   //padding:1rem 0;
+	   font-size:1.4rem;
+	   overflow-y: visible;
+	   word-wrap: break-word;
+	   //overflow: hidden;
+	}
+	//基本信息页面样式控制
+	.formBox{
+	   height:4.1rem;
+	   line-height:4rem;
+	   position: relative;
+	   border-bottom: 0.1rem solid @c004;
+	   &.hasPad{
+	       padding:1rem 0;
+	       line-height: normal;
+	       height:auto;
+	       .formList{
+	            height:2rem;
+	            textarea{
+	               position: absolute;
+	               top:0;
+	               right:0;
+	            }
+	       }
+	   }
+	   label{
+	       float:left;
+	   }
+	   .formList{
+	       margin-right:1.6rem;
+	       text-align: right;
+	       input{
+	           text-align: right;
+	       }
+	   }
+	   textarea{
+	       text-align: right;
+	   }
+	   &.left{
+	       textarea{
+	           text-align: left;
+	       }
+	   }
+	}
+
+	
+}
+
+//语音验证码
+.noCode{
+   //display:none;
+   visibility: hidden;
+   margin: 0.8rem 1.2rem 0 0;
+   font-size: 1.2rem;
+   @c003: #7d7c7d;
+   position: relative;
+   text-align: right;
+
+   &.show{
+   		visibility: visible;
+   }
+}
+
+//表单行内排列时，控制label的宽度
+.line6{
+    label{
+        width:6rem;
+    }
+    .formList{
+        margin-left:8rem;
+    }
+}
+.line14{
+    label{
+        width:14rem;
+    }
+    .formList{
+        margin-left:16rem;
+    }
+}
+.line10{
+    label{
+        width:10rem;
+    }
+    .formList{
+        margin-left:12rem;
+    }
+}

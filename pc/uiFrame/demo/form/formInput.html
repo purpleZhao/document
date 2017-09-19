@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>input输入框</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/form/check.css">
+
+		<style>
+			body{
+				min-width: 300px;
+				min-height: 500px;
+			}
+		</style>
+
+	</head>
+
+	<body> 
+
+		<div class="inputDom">
+			<div class="card-input-row">
+				<!-- 该表单元素的label -->
+			    <label>银行预留手机号</label>
+
+			    <div class="inputRow">
+				    <!-- 输入框 -->
+				    <input type="text" placeholder="请输入银行预留手机号" maxlength="11" needCheck="true">
+				    <!-- 输入框的x按钮 --> 
+				    <i class="iconfont">&#xe649;</i>
+				</div>
+			</div>
+
+			<div class="card-input-row">
+			    <label>请输入图文验证码</label>
+			    <div class="clearfix">
+			        <!-- 输入框-->
+			        <div class="inputRow sms-code-input">
+			            <input type="text" placeholder="请输入图文验证码" maxlength="4" needCheck="true">
+			            <i class="iconfont code">&#xe649;</i>
+			        </div>
+			        <!-- 图文验证码 -->
+			        <img class="verify-img" src="" > 
+			    </div>
+			</div>
+
+			<div class="card-input-row">
+			    <label>请输入短信验证码</label>
+			    <div class="clearfix">
+			       <!-- 输入框-->
+	               <div class="inputRow sms-code-input"> 
+	                   <input type="text" placeholder="请输入短信验证码" maxlength="6" needCheck="true">
+	                   <i class="iconfont code">&#xe649;</i> 
+	               </div>
+	               <button class="send-sms-btn">获取短信验证码</button>
+	               <div class="voice">收不到验证码？</div>
+			    </div>
+			</div>
+
+		</div>
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/form/formEvent.js"></script>
+
+	</body>
+
+</html>

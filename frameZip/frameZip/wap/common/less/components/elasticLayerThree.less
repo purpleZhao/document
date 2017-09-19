@@ -1,0 +1,87 @@
+/**
+ * 第三种弹层样式
+ * 立即开户/暂不开户   立即绑定/暂不绑定
+ */
+
+ .elasticLayerThree{
+ 	display: none;
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: rgba(51, 51, 51, 0.8);
+	z-index: 19999999;
+
+	//关闭按钮
+	.close{
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		font-size: 1.4rem;
+		width: 1.4rem;
+		height: 1.4rem;
+		color: @c007;
+	}
+
+	//icon的云
+ 	.cloud{
+ 		font-size: 6.6rem;
+ 		color: @c004;
+ 	}
+ 	
+ 	.elasticWrapper{
+ 		position: relative;
+ 		display: table;
+ 		transform: translate(-50%,-50%);
+ 		-webkit-transform: translate(-50%,-50%);
+ 		top: 50%;
+ 		left: 50%;
+ 		width: 72%;
+ 		background: @c005;
+ 		text-align: center;
+ 		z-index: 105;
+ 		border-radius: 0.4rem;
+
+ 		.public{
+ 			height: 7.2rem;
+ 			text-align: center;
+ 			font-size: 1.6rem;
+ 			line-height: 7.2rem;
+ 		}
+
+ 		.elasticTxt{
+ 			padding: 2.2rem 1.6rem 0;
+ 			// padding-top: 2.2rem;
+ 			font-size: 1.2rem;
+ 			color: @c003;
+ 			line-height: 2.2rem;
+ 			border-top: 1px solid @c004;
+ 		}
+ 	}
+ 	a{
+ 		display: block;
+ 		width: 14rem;
+ 		height: 3rem;
+ 		line-height: 3rem;
+ 		margin: 0 auto;
+ 		font-size: 1.4rem;
+ 		border-radius: 0.2rem;
+ 	}
+ 	.bind{
+ 		margin-top: 2.8rem;
+ 		color: @c005;
+ 		background-color: @c006;
+ 		&:active{
+ 			color: @c005;
+ 		}
+ 	}
+ 	.noBind{
+ 		margin-top: 2rem;
+ 		margin-bottom: 3rem;
+ 		border: 1px solid @c001;
+ 		&:active{
+ 			color: @c002;
+ 		}
+ 	}
+ }

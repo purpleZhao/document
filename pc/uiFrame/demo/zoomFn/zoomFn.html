@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>图片查看器</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/common/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/Zoomfn/Zoomfn.css">
+
+		<style>
+
+
+			body{
+				min-width: 500px;
+				min-height: 500px;
+			}
+
+
+			.img{
+				width: 200px;
+			}
+
+		</style>
+
+	</head>
+
+	<body> 
+
+		<img src="./1.jpg" class="img">
+
+		<div class="Zoomfn">
+			<div class="mask"></div>
+			<i class="iconfont closebtn">&#xe631;</i>
+		    <div class="enlargebox">
+		    	<img class="enlarge" src="">
+		    </div>
+		</div>
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script src="../libraries/common/Zoomfn/Zoomfn.js"></script>
+		<script type="text/javascript">
+			$(".img").Zoomfn();
+		</script>
+
+
+
+	</body>
+
+</html>

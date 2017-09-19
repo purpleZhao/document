@@ -1,0 +1,58 @@
+//单选框
+.mui-radio{
+
+    label{
+        color: @c003;
+        font-size: 1.4rem;
+        padding: 0;
+        line-height: 4rem;
+
+        span{
+            display:inline-block;
+            &.txtNotice{
+                font-size: 1.2rem;
+                transform: scale(0.875);
+                transform-origin: left;
+                margin-left: 1rem;
+            }
+        }
+        
+    }
+
+    input[type=radio]{
+        //width: 1.6rem;
+        height: 1.7rem;
+        width: auto;
+        top: 0;
+        //height: inherit;
+        right: 1.2rem;
+        top: 50%;
+        transform: translate(0,-50%);
+        -webkit-transform: translate(0,-50%);
+
+        &:before{
+            font-size: 2rem;
+            //line-height: inherit;
+            position: absolute;
+            right: 0;
+        }
+
+        &:checked:before{
+            color: @c006;
+        }
+    }
+
+    &.mui-left{
+        label{
+            padding: 0 1.5rem 0 2.4rem;
+            color: @c002;
+        }
+
+        input[type=radio]{
+            left: 0;
+            &:before{
+                left: 0;
+            }
+        }
+    }
+}

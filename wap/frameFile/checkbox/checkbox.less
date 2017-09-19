@@ -1,0 +1,39 @@
+//复选框及右侧文案（目前实名认证页面底部协议文案用到）
+.mui-checkbox.mui-left {
+    div{
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1.2rem;
+        color: @c003;
+        line-height: 1.8rem;
+        padding-left: 2.4rem;
+        font-family: "Microsoft YaHei", Arial, "Helvetica";
+
+        .item1{
+            color: @c003;
+        }
+    }
+
+    input[type=checkbox]{
+        left: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        //vertical-align: top;
+        top: 0.3rem;
+        line-height: 1.6rem;
+         
+
+        &:before{
+            font-size: 1.6rem;
+            line-height: 0;
+            content: '\e668';
+            font-family: inherit; 
+        }
+        &:checked{
+            &:before{
+                color: @c006;
+                content: '\e669';
+            }
+        }
+    }
+}

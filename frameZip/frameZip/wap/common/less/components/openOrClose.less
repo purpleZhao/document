@@ -1,0 +1,62 @@
+/**
+ * 展开收起的银行卡列表样式
+ * @author yanginlai 2017-05-05
+ */
+
+
+//展开收起样式
+//活动区域
+.actionWrap{
+    overflow: hidden;
+}
+//展开收起按钮
+.actionBtn{
+    &:before{
+        content: '展开';
+        font-size: 1rem;
+        font-family: "Microsoft YaHei", Arial, "Helvetica";
+    }
+    &:after{
+        font-size: 1rem;
+        content: '\e609';
+        color: @c001;
+    }
+    &.active{
+        &:before{
+            content: '收起'
+        }
+        &:after{
+            content: '\e62a'
+        }
+    }
+}
+
+
+ //label里多行的，添加lineMore class
+ //需要隐藏的，添加hide class
+ //每一行为一个p标签，颜色如果是深灰色#7d7c7d，添加dark  class
+  .mui-radio{
+     &.lineMore{
+         label{
+             line-height: 1.4rem;
+             padding: 1.2rem 0;
+             p{
+                 margin-bottom: 1rem;
+                 color: @c001;
+
+                 &:last-child{
+                     margin-bottom: 0;
+                 }
+                 &.dark{
+                     color: @c003;
+                 }
+             }
+         }
+     }
+
+     &.hide{
+         display:none;
+         //height: 0;
+     }
+     
+  }

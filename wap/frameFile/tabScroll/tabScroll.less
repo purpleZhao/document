@@ -1,0 +1,58 @@
+/**
+ * 左右滑动组件的基本样式
+ */
+
+.mui-slider{
+	
+	//导航
+	.mui-segmented-control.mui-scroll-wrapper{
+	    height: 2.6rem;
+	    padding-top: 1.4rem;
+	    box-shadow: 0 0.1rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+	    box-sizing: content-box;
+	    background: @c005;
+
+	    .mui-scroll{
+	    	height: auto;
+	    	//position: relative;
+
+	    	.mui-control-item{
+	    		font-size: 1.2rem;
+	    		line-height: 1.2rem;
+	    		padding: 0 0 1.4rem 0;
+	    		text-overflow: inherit;
+	    		box-sizing: content-box;
+
+	    		&.mui-active{
+	    			border-bottom: 0.1rem solid @c006;
+	    		}
+	    	}
+
+	    	&.manyItem{
+
+	    		padding-left: 1.6rem;
+
+	    		.mui-control-item{
+	    			padding-right: 2.4rem;
+
+	    			&.mui-active{
+		    			border-bottom: 0;
+		    		}
+	    		}
+	    	}
+	    }
+	}
+
+	.block{
+		background: @c005;
+		width: 1.2rem;
+		box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.3);
+	}
+	
+	//内容
+	.tab-scroll-action{
+		.mui-scroll-wrapper, .mui-scroll{
+			position: relative;
+		}
+	}
+}

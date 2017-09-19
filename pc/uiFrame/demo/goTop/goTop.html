@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>回到顶部</title>
+
+		<link rel="stylesheet" href="../libraries/common/reset.css">
+		<link rel="stylesheet" href="../libraries/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../libraries/common/goTop/goTop.css">
+
+		<style>
+			html, body{
+				width: 100%;
+				height: 100%;
+				min-width: 400px;
+				min-height: 300px;
+			}
+			img{
+				height: 300px;
+			}
+			
+		</style>
+
+	</head>
+
+	<body> 
+
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		<img src="./1.jpg">
+		
+		<!-- 返回顶部按钮 -->
+		<div class="goTop">
+			<a href="javascript:;">
+				<i class="iconfont">&#xe624;</i>
+				<span class="name">返回顶部</span>
+			</a>
+		</div>
+
+		<script src="../libraries/jquery/jquery1.12.3.js"></script>
+		<script>
+			$('.goTop').on('click', function(){
+				//回到顶部
+				$('body').animate({
+					scrollTop:0
+				})
+				//Firefox兼容
+				var a_interval = setInterval(function(){
+					document.documentElement.scrollTop -= 60;
+					if(document.documentElement.scrollTop <= 0){
+						clearInterval(a_interval);
+					}
+				},10);
+			})
+		</script>
+
+	</body>
+
+</html>

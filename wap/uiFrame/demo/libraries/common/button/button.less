@@ -1,0 +1,43 @@
+/**********************************大黄色按钮的样式******************************/
+//在卡片视图外部，需要左右边距，html结构：
+// <div class="btnButton">
+//      <button type="button" class="mui-btn"></button>
+// </div>
+.btnButton{
+    margin: 4rem 1.6rem;
+}
+//在卡片视图内部，不需要左右边距，或脱离文档流定位，html结构：
+// <button type="button" class="mui-btn"></button>
+// 针对不同情况添加不同class
+.mui-btn{
+    width: 100%;
+    font-size: 1.4rem;
+    border-radius: 0.2rem;
+    color: @c005;
+    background: @c006;
+    height: 4rem;
+    line-height: 4rem;
+    
+    //按钮置灰时颜色
+    &.disable{
+        background: rgb(204,204,204);
+        opacity: 1;
+    }
+
+    //按钮icon样式
+    &.hasIcon:before{
+        content: '';
+        margin-right: 0.4rem;
+        font-family: iconfont;
+        vertical-align: middle;
+    }
+
+    //位置固定在底部
+    &.bottom{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 50;
+        border-radius: 0;
+    }
+}
